@@ -37,22 +37,6 @@ body {
     margin: 0;
 }
 
-.cabecalho p {
-    font-size: 0.9rem;
-    margin-top: 5px;
-}
-
-h2 {
-    color: #222;
-    margin-bottom: 5px;
-}
-
-.subtitulo {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-}
-
 form {
     text-align: left;
     margin-bottom: 20px;
@@ -62,38 +46,30 @@ label {
     display: block;
     font-size: 0.9rem;
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .radius-formulario {
-    width: 100%;
-    padding: 10px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
     border: 1px solid rgba(218, 224, 231, 0.8);
-    border-radius: 6px;
+    border-radius: 8px;
     outline: none;
     transition: 0.3s;
-    font-size: 0.95rem;
+    margin: 5px;
 }
 
 .radius-formulario:focus {
     border-color: #0040ff;
 }
 
-div[opcoes] {
+form div {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.85rem;
-    margin-top: 10px;
-}
-
-div[opcoes] a {
-    color: #0040ff;
-    text-decoration: none;
-}
-
-div[opcoes] a:hover {
-    text-decoration: underline;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 a button {
@@ -106,7 +82,7 @@ a button {
     cursor: pointer;
     font-weight: 600;
     font-size: 1rem;
-    margin-top: 10px;
+    margin-top: 15px;
     transition: 0.3s ease;
 }
 
@@ -114,18 +90,19 @@ a button:hover {
     opacity: 0.9;
 }
 
-.cadastro {
-    font-size: 0.85rem;
-    color: #555;
-    margin-top: 15px;
+body > div {
+    background-color: #fff;
+    width: 380px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.cadastro a {
-    color: #0040ff;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.cadastro a:hover {
-    text-decoration: underline;
+body > div > div:first-child {
+    background: linear-gradient(135deg, #0040ff, #001a99);
+    color: #fff;
+    padding: 25px 0;
+    border-radius: 12px 12px 0 0;
+    margin: -30px -30px 20px -30px;
 }

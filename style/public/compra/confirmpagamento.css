@@ -1,0 +1,136 @@
+:root {
+    --cor-primaria: #007bff;
+    --cor-sucesso: #4CAF50;
+    --cor-fundo-claro: #f8f9fa;
+    --azul-escuro: #0056b3;
+}
+
+body {
+    background-color: var(--cor-fundo-claro);
+}
+
+.logo {
+    color: var(--cor-primaria) !important;
+}
+
+.icone-btn, .carrinho-btn {
+    color: #6c757d !important;
+}
+
+.container-icone-sucesso {
+    width: 60px;
+    height: 60px;
+    background-color: var(--cor-sucesso);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.numero-pedido {
+    font-size: 0.9rem;
+    color: var(--cor-primaria);
+    font-weight: 500;
+}
+
+.status-confirmado {
+    color: var(--cor-sucesso);
+}
+
+.border-dashed {
+    border-style: dashed !important;
+}
+
+.resumo-pedido, .detalhes-itens {
+    border-radius: 0;
+}
+
+.resumo-pedido {
+    border-bottom: none;
+}
+.detalhes-itens {
+    border-top: none !important;
+}
+
+.cartao-acao {
+    border-color: #dee2e6 !important;
+}
+
+.secao-proximos-passos {
+    position: relative;
+}
+
+.container-passos {
+    position: relative;
+    padding-top: 20px;
+}
+.container-passos::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px; 
+    max-width: 80%;
+    height: 1px;
+    background-color: #dee2e6;
+    z-index: 0;
+}
+
+.passo {
+    position: relative;
+    z-index: 1;
+    background-color: var(--cor-fundo-claro);
+}
+
+.numero-passo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #e9ecef; 
+    color: #6c757d;
+    border: 3px solid #ced4da;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.numero-passo.active {
+    background-color: var(--cor-primaria);
+    color: white;
+    border-color: #9ac2ff;
+}
+
+.rodape {
+    background-color: var(--cor-primaria) !important;
+}
+
+.bg-dark-blue {
+    background-color: var(--azul-escuro) !important;
+}
+
+.rodape a {
+    color: #c9e1ff !important;
+}
+
+.rodape li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .container-passos::before {
+        display: none;
+    }
+    .container-passos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .passo {
+        width: 100%;
+        margin-bottom: 15px !important;
+    }
+}

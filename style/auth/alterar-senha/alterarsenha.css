@@ -1,3 +1,4 @@
+
 body {
     font-family: "Poppins", sans-serif;
     background: #f5f7fb;
@@ -37,20 +38,9 @@ body {
     margin: 0;
 }
 
-.cabecalho p {
-    font-size: 0.9rem;
-    margin-top: 5px;
-}
-
-h2 {
+h3 {
     color: #222;
-    margin-bottom: 5px;
-}
-
-.subtitulo {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 form {
@@ -79,23 +69,6 @@ label {
     border-color: #0040ff;
 }
 
-div[opcoes] {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.85rem;
-    margin-top: 10px;
-}
-
-div[opcoes] a {
-    color: #0040ff;
-    text-decoration: none;
-}
-
-div[opcoes] a:hover {
-    text-decoration: underline;
-}
-
 a button {
     width: 200px;
     background: linear-gradient(90deg, #0040ff, #0026b5);
@@ -114,18 +87,19 @@ a button:hover {
     opacity: 0.9;
 }
 
-.cadastro {
-    font-size: 0.85rem;
-    color: #555;
-    margin-top: 15px;
+body > div {
+    background-color: #fff;
+    width: 380px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.cadastro a {
-    color: #0040ff;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.cadastro a:hover {
-    text-decoration: underline;
+body > div > div:first-child {
+    background: linear-gradient(135deg, #0040ff, #001a99);
+    color: #fff;
+    padding: 25px 0;
+    border-radius: 12px 12px 0 0;
+    margin: -30px -30px 20px -30px;
 }

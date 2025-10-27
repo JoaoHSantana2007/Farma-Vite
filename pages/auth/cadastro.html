@@ -9,52 +9,55 @@
     </head>
     <body>
         <div class="container">
-        <div class="cabecalho">
-            <h1>FarmaVite</h1>
-            <p>Sua farmácia digital!</p>
+            <div class="caixa">
+                <div class="cabecalho">
+                    <h1>FarmaVite</h1>
+                    <p>Sua farmácia digital!</p>
+                </div>
+                <h2>Criar nova conta</h2>
+                <p class="subttitulo">Preencha os dados para se cadastrar</p>
+                <form>
+                    <div class="">
+                        <label for="nome">Nome Completo:</label>
+                        <input class="radius-nome"type="text" id="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="container">
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input class="radius" type="email" id="email" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div>
+                            <label for="telefone">Telefone:</label>
+                            <input class="radius" type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div>
+                            <label for="senha">Senha:</label>
+                            <input class="radius" type="password" id="senha" placeholder="Digite sua senha" minlength="8" required>
+                        </div>
+                        <div>
+                            <label for="confirmar">Confirmar Senha:</label>
+                            <input class="radius" type="password" id="confirmar" placeholder="Confirme sua senha" minlength="8" required>
+                        </div>
+                    </div>
+                    <div>
+                        <br>
+                        <span>Sua senha deve conter:</span>
+                        <ul>
+                            <li>Pelo menos 8 caracteres</li>
+                            <li>Uma letra maiúscula</li>
+                            <li>Um número</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="termos">
+                        <label for="termos">Eu concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a></label>
+                    </div>
+                </form>
+                <a href="login.html"><button>Criar Conta</button></a>
+                <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
+            </div>
         </div>
-        <h2>Criar nova conta</h2>
-        <p class="subttitulo">Preencha os dados para se cadastrar</p>
-        <form>
-            <div>
-                <label for="nome">Nome Completo</label>
-                <input type="text" id="nome" placeholder="Digite seu nome completo">
-            </div>
-            <div class="linha">
-                <div class="coluna">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Digite seu e-mail">
-                </div>
-                <div class="coluna">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" placeholder="(00) 00000-0000">
-                </div>
-            </div>
-            <div class="linha">
-                <div class="coluna">
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="Digite sua senha">
-                </div>
-                <div class="coluna">
-                    <label for="confirmar">Confirmar Senha</label>
-                    <input type="password" id="confirmar" placeholder="Confirme sua senha">
-                </div>
-            </div>
-            <div class="requisitos-senha">
-                <span>Sua senha deve conter:</span>
-                <ul>
-                    <li>Pelo menos 8 caracteres</li>
-                    <li>Uma letra maiúscula</li>
-                    <li>Um número</li>
-                </ul>
-            </div>
-            <div class="termos-uso/politica">
-                <input type="checkbox" id="termos">
-                <label for="termos">Eu concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a></label>
-            </div>
-        </form>
-        <a href="../../index.html"><button>Criar Conta</button></a>
-        <p class="login-link">Já tem uma conta? <a href="#">Faça login aqui</a></p>
-    </div>
     </body>
 </html>

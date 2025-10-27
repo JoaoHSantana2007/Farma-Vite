@@ -13,11 +13,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    gap: 20px;
 }
 
 .caixa {
     background-color: #fff;
-    width: 380px;
+    width: 500px;
     padding: 30px;
     border-radius: 16px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -65,8 +66,8 @@ label {
     margin-bottom: 5px;
 }
 
-.radius-formulario {
-    width: 100%;
+.radius-nome {
+    width: 480px;
     padding: 10px;
     border: 1px solid rgba(218, 224, 231, 0.8);
     border-radius: 6px;
@@ -75,25 +76,22 @@ label {
     font-size: 0.95rem;
 }
 
-.radius-formulario:focus {
+.radius-nome:focus {
     border-color: #0040ff;
 }
 
-div[opcoes] {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.85rem;
-    margin-top: 10px;
+.radius {
+    width: 220px;
+    padding: 10px;
+    border: 1px solid rgba(218, 224, 231, 0.8);
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 0.95rem;
 }
 
-div[opcoes] a {
-    color: #0040ff;
-    text-decoration: none;
-}
-
-div[opcoes] a:hover {
-    text-decoration: underline;
+.radius:focus {
+    border-color: #0040ff;
 }
 
 a button {
@@ -112,20 +110,4 @@ a button {
 
 a button:hover {
     opacity: 0.9;
-}
-
-.cadastro {
-    font-size: 0.85rem;
-    color: #555;
-    margin-top: 15px;
-}
-
-.cadastro a {
-    color: #0040ff;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.cadastro a:hover {
-    text-decoration: underline;
 }
