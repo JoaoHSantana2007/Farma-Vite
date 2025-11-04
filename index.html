@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>FarmaVite</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">
+          <i class="fas fa-prescription-bottle-alt me-1"></i> FarmaVite
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Alternar navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">Farmácias</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Seja Entregador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Seja Parceiro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Meus Pedidos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <a href="#" class="btn me-3 icone-btn"><i class="fas fa-user"></i></a>
+          <a href="#" class="btn me-3 carrinho-btn position-relative">
+            <i class="fas fa-shopping-cart"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary contagem-carrinho"
+              >1</span
+            >
+          </a>
+          <a href="#" class="btn btn-primary">Cadastrar</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero-section text-white py-5 mb-5 custom-bg-dark">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <h1 class="display-5 fw-bold mb-0">Seus medicamentos</h1>
+            </div>
+            <p class="lead mb-4">
+              Conectamos você às melhores farmácias da sua região, com entregas
+              rápidas e seguras. Medicamentos, vitaminas e produtos de beleza
+              com apenas alguns cliques.
+            </p>
+
+            <div class="d-flex gap-3 mb-4">
+              <button class="btn btn-outline-light btn-lg">
+                Como Funciona
+              </button>
+              <button class="btn btn-outline-light btn-lg">
+                Encontrar Farmácias
+              </button>
+            </div>
+
+            <div class="d-flex flex-wrap gap-4 fs-6 opacity-75">
+              <span
+                ><i class="fas fa-check-circle me-1 text-warning"></i> Entrega
+                em 30min</span
+              >
+              <span
+                ><i class="fas fa-shipping-fast me-1 text-warning"></i> Frete
+                grátis</span
+              >
+              <span
+                ><i class="fas fa-pills me-1 text-warning"></i> 300+
+                farmácias</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container text-center py-5">
+      <h2 class="fw-bold mb-1">Tudo que você precisa</h2>
+      <p class="text-muted mb-4">
+        Milhares de produtos organizados por categoria para você encontrar
+        rapidamente
+      </p>
+
+      <div class="input-group mb-5 mx-auto" style="max-width: 700px">
+        <span class="input-group-text bg-white border-end-0"
+          ><i class="fas fa-search text-muted"></i
+        ></span>
+        <input
+          type="text"
+          class="form-control border-start-0 py-2"
+          placeholder="Pesquisar medicamentos, cosméticos..."
+        />
+      </div>
+
+      <div class="row row-cols-2 row-cols-md-4 g-4 mb-4">
+        <div class="col">
+          <a
+            href="#"
+            class="card h-100 text-decoration-none shadow-sm p-3 text-dark category-card-custom"
+          >
+            <div class="card-body text-center">
+              <div class="icon-circle-custom mb-2">
+                <i class="fas fa-prescription-bottle-alt"></i>
+              </div>
+              <h3 class="card-title fs-5 fw-bold">Medicamentos</h3>
+              <p class="card-text text-muted mb-0">Fórmulas e Receitas</p>
+              <span class="badge bg-primary-subtle text-primary mt-2"
+                >3.000+ produtos</span
+              >
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="#"
+            class="card h-100 text-decoration-none shadow-sm p-3 text-dark category-card-custom"
+          >
+            <div class="card-body">
+              <div class="icon-circle-custom mb-2">
+                <i class="fas fa-spa"></i>
+              </div>
+              <h3 class="card-title fs-5 fw-bold">Beleza</h3>
+              <p class="card-text text-muted mb-0">Cosméticos e Perfumes</p>
+              <span class="badge bg-primary-subtle text-primary mt-2"
+                >1.500+ produtos</span
+              >
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="#"
+            class="card h-100 text-decoration-none shadow-sm p-3 text-dark category-card-custom"
+          >
+            <div class="card-body">
+              <div class="icon-circle-custom mb-2">
+                <i class="fas fa-baby"></i>
+              </div>
+              <h3 class="card-title fs-5 fw-bold">Bebê</h3>
+              <p class="card-text text-muted mb-0">Cuidados Pré e Pós</p>
+              <span class="badge bg-primary-subtle text-primary mt-2"
+                >800+ produtos</span
+              >
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="#"
+            class="card h-100 text-decoration-none shadow-sm p-3 text-dark category-card-custom"
+          >
+            <div class="card-body">
+              <div class="icon-circle-custom mb-2">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <h3 class="card-title fs-5 fw-bold">Vitaminas</h3>
+              <p class="card-text text-muted mb-0">Suplementos e Nutrição</p>
+              <span class="badge bg-primary-subtle text-primary mt-2"
+                >900+ produtos</span
+              >
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="#"
+            class="card h-100 text-decoration-none shadow-sm p-3 text-dark category-card-custom"
+          >
+            <div class="card-body">
+              <div class="icon-circle-custom mb-2">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <h3 class="card-title fs-5 fw-bold">Saúde</h3>
+              <p class="card-text text-muted mb-0">Equipamentos médicos</p>
+              <span class="badge bg-primary-subtle text-primary mt-2"
+                >400+ produtos</span
+              >
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="#"
+            class="card h-100 text-decoration-none shadow-sm p-3 text-dark category-card-custom"
+          >
+            <div class="card-body">
+              <div class="icon-circle-custom mb-2">
+                <i class="fas fa-hand-holding-medical"></i>
+              </div>
+              <h3 class="card-title fs-5 fw-bold">Dermato</h3>
+              <p class="card-text text-muted mb-0">Cuidados com a pele</p>
+              <span class="badge bg-primary-subtle text-primary mt-2"
+                >300+ produtos</span
+              >
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="#"
+            class="card h-100 text-decoration-none shadow-sm p-3 text-dark category-card-custom"
+          >
+            <div class="card-body">
+              <div class="icon-circle-custom mb-2">
+                <i class="fas fa-shower"></i>
+              </div>
+              <h3 class="card-title fs-5 fw-bold">Higiene</h3>
+              <p class="card-text text-muted mb-0">Produtos de Higiene</p>
+              <span class="badge bg-primary-subtle text-primary mt-2"
+                >900+ produtos</span
+              >
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="#"
+            class="card h-100 text-decoration-none shadow-sm p-3 text-dark category-card-custom"
+          >
+            <div class="card-body">
+              <div class="icon-circle-custom mb-2">
+                <i class="fas fa-clipboard-list"></i>
+              </div>
+              <h3 class="card-title fs-5 fw-bold">Consultas</h3>
+              <p class="card-text text-muted mb-0">Telemedicina</p>
+              <span class="badge bg-primary-subtle text-primary mt-2"
+                >Disponível 24h</span
+              >
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <button class="btn btn-secondary py-2 px-4 fw-bold">
+        Explorar Produtos
+      </button>
+    </section>
+
+    <section class="container text-center py-5">
+      <h2 class="fw-bold mb-1">Farmácias Parceiras</h2>
+      <p class="text-muted mb-4">
+        Centenas de farmácias na sua região prontas para entregar seus
+        medicamentos
+      </p>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card h-100 p-3 shadow-sm border-0 partner-card-custom">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title fs-5 fw-bold mb-0">Farmácia São Paulo</h3>
+              <div class="text-end">
+                <small class="text-warning"
+                  ><i class="fas fa-star"></i> 4.6</small
+                >
+                <small class="d-block text-muted">1.2 km</small>
+              </div>
+            </div>
+            <div class="d-flex gap-3 mb-3">
+              <small class="text-muted"
+                ><i class="fas fa-clock me-1"></i> 15-35 min</small
+              >
+              <small class="text-success fw-bold"
+                ><i class="fas fa-shipping-fast me-1"></i> Grátis</small
+              >
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge text-bg-light border text-muted"
+                >Medicamentos</span
+              >
+              <span class="badge text-bg-light border text-muted"
+                >Cosméticos</span
+              >
+            </div>
+            <button class="btn btn-outline-primary fw-bold w-100">
+              Ver Produtos
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3 shadow-sm border-0 partner-card-custom">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title fs-5 fw-bold mb-0">Drogaria Moderna</h3>
+              <div class="text-end">
+                <small class="text-warning"
+                  ><i class="fas fa-star"></i> 4.9</small
+                >
+                <small class="d-block text-muted">2.8 km</small>
+              </div>
+            </div>
+            <div class="d-flex gap-3 mb-3">
+              <small class="text-muted"
+                ><i class="fas fa-clock me-1"></i> 25min</small
+              >
+              <small class="text-danger fw-bold"
+                ><i class="fas fa-shipping-fast me-1"></i> R$ 6,00</small
+              >
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge text-bg-light border text-muted"
+                >Manipulados</span
+              >
+              <span class="badge text-bg-light border text-muted"
+                >Genérico</span
+              >
+              <span class="badge text-bg-light border text-muted"
+                >Zamartin</span
+              >
+            </div>
+            <button class="btn btn-outline-primary fw-bold w-100">
+              Ver Produtos
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3 shadow-sm border-0 partner-card-custom">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title fs-5 fw-bold mb-0">Farmácia Central</h3>
+              <div class="text-end">
+                <small class="text-warning"
+                  ><i class="fas fa-star"></i> 4.7</small
+                >
+                <small class="d-block text-muted">2.1 km</small>
+              </div>
+            </div>
+            <div class="d-flex gap-3 mb-3">
+              <small class="text-muted"
+                ><i class="fas fa-clock me-1"></i> 10-20 min</small
+              >
+              <small class="text-danger fw-bold"
+                ><i class="fas fa-shipping-fast me-1"></i> R$ 3,50</small
+              >
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge text-bg-light border text-muted">Popular</span>
+              <span class="badge text-bg-light border text-muted"
+                >Genéricos</span
+              >
+              <span class="badge text-bg-light border text-muted"
+                >Dermocosméticos</span
+              >
+            </div>
+            <button class="btn btn-outline-primary fw-bold w-100">
+              Ver Produtos
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3 shadow-sm border-0 partner-card-custom">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title fs-5 fw-bold mb-0">PharmExpress</h3>
+              <div class="text-end">
+                <small class="text-warning"
+                  ><i class="fas fa-star"></i> 4.6</small
+                >
+                <small class="d-block text-muted">...</small>
+              </div>
+            </div>
+            <div class="d-flex gap-3 mb-3">
+              <small class="text-muted"
+                ><i class="fas fa-clock me-1"></i> 25-35 min</small
+              >
+              <small class="text-danger fw-bold"
+                ><i class="fas fa-shipping-fast me-1"></i> R$ 4,99</small
+              >
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge text-bg-light border text-muted">Express</span>
+              <span class="badge text-bg-light border text-muted"
+                >Vitaminas</span
+              >
+              <span class="badge text-bg-light border text-muted"
+                >Suplementos</span
+              >
+            </div>
+            <button class="btn btn-outline-primary fw-bold w-100">
+              Ver Produtos
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container text-center py-5">
+      <h2 class="fw-bold mb-1">Faça Parte da FarmaVite</h2>
+      <p class="text-muted mb-4">
+        Junte-se à nossa rede e aumente sua renda como entregador ou expanda seu
+        negócio como farmácia parceira
+      </p>
+      <div class="d-flex justify-content-center gap-3">
+        <button class="btn btn-secondary py-2 px-4 fw-bold">
+          Seja um Entregador
+        </button>
+        <button class="btn btn-primary py-2 px-4 fw-bold">
+          Seja uma Farmácia Parceira
+        </button>
+      </div>
+    </section>
+
+    <footer class="text-white pt-5 pb-3 custom-bg-dark">
+            <div class="container grade-rodape pb-4">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="logo fs-4 fw-bold mb-3">
+              <i class="fas fa-prescription-bottle-alt me-1"></i> FarmaVite
+            </div>
+            <p class="small">
+              A plataforma que conecta você às melhores farmácias da sua região
+              com entrega rápida e segura.
+            </p>
+            <div class="links-sociais mt-3 fs-5">
+              <i class="fab fa-facebook-f me-3"></i>
+              <i class="fab fa-instagram me-3"></i>
+              <i class="fab fa-twitter me-3"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">Links Rápidos</h5>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="#" class="text-decoration-none text-light"
+                  >Farmácias</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-light">Produtos</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-light"
+                  >Seja Entregador</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-light"
+                  >Seja Parceiro</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">Categorias</h5>
+            <div class="d-flex small">
+              <ul class="list-unstyled me-4">
+                <li>Medicamentos</li>
+                <li>Beleza</li>
+                <li>Bebê</li>
+                <li>Vitaminas</li>
+              </ul>
+              <ul class="list-unstyled">
+                <li>Higiene</li>
+                <li>Demarto</li>
+                <li>Saúde</li>
+                <li>Consultas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">Contato</h5>
+            <ul class="list-unstyled small">
+              <li><i class="fas fa-phone me-2"></i> (11) 3000-3000</li>
+              <li>
+                <i class="fas fa-envelope me-2"></i> contato@farmavite.com
+              </li>
+              <li><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="rodape-inferior bg-dark-blue py-3 small">
+        <div
+          class="container d-flex justify-content-between flex-column flex-md-row text-center"
+        >
+          <p class="mb-0">© 2024 FarmaVite. Todos os direitos reservados.</p>
+          <div class="links-politicas mt-2 mt-md-0">
+            <a href="#" class="text-white text-decoration-none me-3"
+              >Termos de Uso</a
+            >
+            <a href="#" class="text-white text-decoration-none me-3"
+              >Política de Privacidade</a
+            >
+            <a href="#" class="text-white text-decoration-none">Ajuda</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
