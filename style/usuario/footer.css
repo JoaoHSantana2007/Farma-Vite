@@ -1,0 +1,45 @@
+@import url('../usuario/geral.css');
+
+.custom-bg-dark {
+    background-color: var(--azul-escuro) !important; 
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.85); 
+}
+
+.footer .logo {
+    color: var(--cor-primaria) !important; 
+}
+
+.rodape-inferior.bg-dark-blue {
+    background-color: var(--azul-escuro) !important; 
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.links-sociais i {
+    cursor: pointer;
+    transition: color 0.3s;
+    color: rgba(255, 255, 255, 0.7);
+}
+.links-sociais i:hover {
+    color: var(--cor-alerta); 
+}
+
+.list-unstyled a {
+    transition: color 0.3s;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.list-unstyled a:hover {
+    color: var(--cor-primaria) !important;
+}
+
+.links-politicas a {
+    transition: color 0.3s;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.links-politicas a:hover {
+    color: var(--cor-alerta) !important;
+}

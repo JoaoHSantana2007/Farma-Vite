@@ -15,19 +15,17 @@
     />
     <link
       rel="stylesheet"
-      href="../../../style/usuario/compra/metododepagamento.css"
+      href="../../../../style/usuario/public/compra/metododepagamento.css"
     />
     <link
       rel="shortcut icon"
-      href="../../../img/favicon.ico"
+      href="../../../../img/favicon.ico"
       type="image/x-icon"
     />
     <title>FarmaVite</title>
   </head>
   <body>
-    <header
-      class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm"
-    >
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
       <div class="container">
         <a class="navbar-brand logo" href="#">
           <i class="fas fa-prescription-bottle-alt me-1"></i> FarmaVite
@@ -67,13 +65,13 @@
             <i class="fas fa-shopping-cart"></i>
             <span
               class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary contagem-carrinho"
-              >2</span
+              >1</span
             >
           </a>
           <a href="#" class="btn btn-primary">Cadastrar</a>
         </div>
       </div>
-    </header>
+    </nav>
     <main class="conteudo-principal container py-5">
       <h1 class="fs-3 fw-bold mb-4">Finalizar Pagamento</h1>
       <div class="row g-4">
@@ -146,21 +144,41 @@
                   <p class="mb-0 small text-muted">Pagamento Instantâneo</p>
                 </div>
               </label>
-              <div class="detalhes-metodo detalhes-pix p-3 border-top-0 border rounded mt-n1">
-                <p class="small text-muted mb-3">Escaneie o QR Code ou copie o código PIX para realizar o pagamento</p>
+              <div
+                class="detalhes-metodo detalhes-pix p-3 border-top-0 border rounded mt-n1"
+              >
+                <p class="small text-muted mb-3">
+                  Escaneie o QR Code ou copie o código PIX para realizar o
+                  pagamento
+                </p>
                 <div class="d-flex flex-row flex-wrap align-items-center gap-3">
                   <div class="qr-wrapper">
                     <!-- Ícone do QR (não carregar imagem externa) -->
-                    <div class="qr-icon" aria-hidden="false" role="img" aria-label="QR Code PIX">
+                    <div
+                      class="qr-icon"
+                      aria-hidden="false"
+                      role="img"
+                      aria-label="QR Code PIX"
+                    >
                       <i class="fas fa-qrcode fa-4x"></i>
                     </div>
                   </div>
 
-                  <div class="bloco-codigo-pix bg-light p-3 border rounded d-flex flex-column gap-2" style="min-width:220px;">
-                    <p class="mb-0 codigo-pix">00020101021226800014br.gov.bcb.pix0114+551199999999952040000530398654065804BR.GOV.BCB.PIX0114+5511999999995204000053039865406</p>
-                    <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="bloco-codigo-pix bg-light p-3 border rounded d-flex flex-column gap-2"
+                    style="min-width: 220px"
+                  >
+                    <p class="mb-0 codigo-pix">
+                      00020101021226800014br.gov.bcb.pix0114+551199999999952040000530398654065804BR.GOV.BCB.PIX0114+5511999999995204000053039865406
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
                       <small class="text-muted">Código PIX</small>
-                      <button class="btn btn-primary btn-sm btn-copiar-pix" data-pix="00020101021226800014br.gov.bcb.pix0114+551199999999952040000530398654065804BR.GOV.BCB.PIX0114+5511999999995204000053039865406">
+                      <button
+                        class="btn btn-primary btn-sm btn-copiar-pix"
+                        data-pix="00020101021226800014br.gov.bcb.pix0114+551199999999952040000530398654065804BR.GOV.BCB.PIX0114+5511999999995204000053039865406"
+                      >
                         <i class="far fa-copy me-1"></i> Copiar
                       </button>
                     </div>
@@ -182,14 +200,31 @@
                   <p class="mb-0 small text-muted">Parcelamento disponível</p>
                 </div>
               </label>
-              <div class="detalhes-metodo detalhes-credito p-3 border-top-0 border rounded mt-n1 d-none">
+              <div
+                class="detalhes-metodo detalhes-credito p-3 border-top-0 border rounded mt-n1 d-none"
+              >
                 <div class="d-flex flex-column flex-lg-row gap-3">
-                  <div class="card-preview bg-primary text-white p-3 rounded" style="min-width:260px;">
-                    <div class="d-flex justify-content-between align-items-start mb-3">
-                      <div class="chip" style="width:40px;height:28px;background:rgba(255,255,255,0.4);border-radius:4px;"></div>
+                  <div
+                    class="card-preview bg-primary text-white p-3 rounded"
+                    style="min-width: 260px"
+                  >
+                    <div
+                      class="d-flex justify-content-between align-items-start mb-3"
+                    >
+                      <div
+                        class="chip"
+                        style="
+                          width: 40px;
+                          height: 28px;
+                          background: rgba(255, 255, 255, 0.4);
+                          border-radius: 4px;
+                        "
+                      ></div>
                       <div class="brand">VISA</div>
                     </div>
-                    <div class="card-number fs-5 fw-bold" aria-hidden="true">XXXX XXXX XXXX 1234</div>
+                    <div class="card-number fs-5 fw-bold" aria-hidden="true">
+                      XXXX XXXX XXXX 1234
+                    </div>
                     <div class="d-flex justify-content-between mt-3 small">
                       <div class="card-holder">NOME DO TITULAR</div>
                       <div class="card-expiry">MM/AA</div>
@@ -197,23 +232,49 @@
                   </div>
 
                   <div class="card-form flex-grow-1">
-                    <p class="small text-muted mb-2">Insira os dados do seu cartão. Opções de parcelamento serão exibidas.</p>
+                    <p class="small text-muted mb-2">
+                      Insira os dados do seu cartão. Opções de parcelamento
+                      serão exibidas.
+                    </p>
                     <div class="row g-2">
                       <div class="col-12">
                         <label class="form-label small">Nome no cartão</label>
-                        <input type="text" name="cardHolder" class="form-control" placeholder="Nome (como escrito no cartão)">
+                        <input
+                          type="text"
+                          name="cardHolder"
+                          class="form-control"
+                          placeholder="Nome (como escrito no cartão)"
+                        />
                       </div>
                       <div class="col-12">
                         <label class="form-label small">Número do cartão</label>
-                        <input type="text" name="cardNumber" class="form-control" placeholder="0000 0000 0000 0000" inputmode="numeric">
+                        <input
+                          type="text"
+                          name="cardNumber"
+                          class="form-control"
+                          placeholder="0000 0000 0000 0000"
+                          inputmode="numeric"
+                        />
                       </div>
                       <div class="col-6">
                         <label class="form-label small">Validade (MM/AA)</label>
-                        <input type="text" name="cardExpiry" class="form-control" placeholder="MM/AA" inputmode="numeric">
+                        <input
+                          type="text"
+                          name="cardExpiry"
+                          class="form-control"
+                          placeholder="MM/AA"
+                          inputmode="numeric"
+                        />
                       </div>
                       <div class="col-6">
                         <label class="form-label small">CVV</label>
-                        <input type="text" name="cardCvv" class="form-control" placeholder="123" inputmode="numeric">
+                        <input
+                          type="text"
+                          name="cardCvv"
+                          class="form-control"
+                          placeholder="123"
+                          inputmode="numeric"
+                        />
                       </div>
                     </div>
                   </div>
@@ -306,26 +367,26 @@
         </div>
       </div>
     </main>
-    <footer class="rodape bg-dark pt-5 mt-5">
-      <div class="container grade-rodape pb-4">
+    <footer class="text-white pt-5 pb-3 custom-bg-dark">
+            <div class="container grade-rodape pb-4">
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="logo fs-4 fw-bold mb-3 text-white">
+            <div class="logo fs-4 fw-bold mb-3">
               <i class="fas fa-prescription-bottle-alt me-1"></i> FarmaVite
             </div>
-            <p class="small text-light">
+            <p class="small">
               A plataforma que conecta você às melhores farmácias da sua região
               com entrega rápida e segura.
             </p>
             <div class="links-sociais mt-3 fs-5">
-              <i class="fab fa-facebook-f me-3 text-white"></i>
-              <i class="fab fa-instagram me-3 text-white"></i>
-              <i class="fab fa-twitter me-3 text-white"></i>
-              <i class="fab fa-youtube text-white"></i>
+              <i class="fab fa-facebook-f me-3"></i>
+              <i class="fab fa-instagram me-3"></i>
+              <i class="fab fa-twitter me-3"></i>
+              <i class="fab fa-youtube"></i>
             </div>
           </div>
           <div class="col-lg-2 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3 text-white">Links Rápidos</h5>
+            <h5 class="fw-bold mb-3">Links Rápidos</h5>
             <ul class="list-unstyled small">
               <li>
                 <a href="#" class="text-decoration-none text-light"
@@ -348,34 +409,30 @@
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3 text-white">Categorias</h5>
+            <h5 class="fw-bold mb-3">Categorias</h5>
             <div class="d-flex small">
               <ul class="list-unstyled me-4">
-                <li class="text-light">Medicamentos</li>
-                <li class="text-light">Beleza</li>
-                <li class="text-light">Bebê</li>
-                <li class="text-light">Vitaminas</li>
+                <li>Medicamentos</li>
+                <li>Beleza</li>
+                <li>Bebê</li>
+                <li>Vitaminas</li>
               </ul>
               <ul class="list-unstyled">
-                <li class="text-light">Higiene</li>
-                <li class="text-light">Demarto</li>
-                <li class="text-light">Saúde</li>
-                <li class="text-light">Consultas</li>
+                <li>Higiene</li>
+                <li>Demarto</li>
+                <li>Saúde</li>
+                <li>Consultas</li>
               </ul>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3 text-white">Contato</h5>
+            <h5 class="fw-bold mb-3">Contato</h5>
             <ul class="list-unstyled small">
-              <li class="text-light">
-                <i class="fas fa-phone me-2"></i> (11) 3000-3000
-              </li>
-              <li class="text-light">
+              <li><i class="fas fa-phone me-2"></i> (11) 3000-3000</li>
+              <li>
                 <i class="fas fa-envelope me-2"></i> contato@farmavite.com
               </li>
-              <li class="text-light">
-                <i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP
-              </li>
+              <li><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP</li>
             </ul>
           </div>
         </div>
@@ -384,9 +441,7 @@
         <div
           class="container d-flex justify-content-between flex-column flex-md-row text-center"
         >
-          <p class="mb-0 text-white">
-            © 2024 FarmaVite. Todos os direitos reservados.
-          </p>
+          <p class="mb-0">© 2024 FarmaVite. Todos os direitos reservados.</p>
           <div class="links-politicas mt-2 mt-md-0">
             <a href="#" class="text-white text-decoration-none me-3"
               >Termos de Uso</a
@@ -400,8 +455,10 @@
       </div>
     </footer>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="../../../js/metododepagamento.js"></script>
   </body>
 </html>
