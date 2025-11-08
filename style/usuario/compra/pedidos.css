@@ -1,0 +1,103 @@
+/* Paleta de Cores Definida pelo Usuário */
+:root {
+    --cor-primaria: #007bff; /* Azul de destaque (links, botões, badge) */
+    --cor-fundo-claro: #f8f9fa; /* Fundo principal */
+    --azul-escuro: #0056b3; /* Cor do Rodapé */
+    --cor-borda-clara: #dee2e6; /* Linhas de separação */
+    --cor-texto-muted: #6c757d; /* Texto secundário (drogaria, subtotal) */
+    --cor-sucesso: #28a745; /* Cor verde para 'Entregue' */
+    --cor-aviso: #ffc107; /* Cor amarela para 'Pendente' */
+}
+
+/* Estilos de Fundo e Texto Globais */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--cor-fundo-claro);
+}
+
+.custom-bg-light {
+    background-color: var(--cor-fundo-claro) !important;
+}
+
+.custom-text-muted {
+    color: var(--cor-texto-muted) !important;
+}
+
+/* Cor Primária (Usada para destaque, como o logo no topo, botões e badge) */
+.custom-text-primary {
+    color: var(--cor-primaria) !important;
+}
+
+.custom-bg-primary {
+    background-color: var(--cor-primaria) !important;
+}
+
+.custom-btn-primary {
+    background-color: var(--cor-primaria) !important;
+    border-color: var(--cor-primaria) !important;
+}
+
+.custom-btn-primary:hover {
+    background-color: var(--azul-escuro) !important;
+    border-color: var(--azul-escuro) !important;
+}
+
+/* Navbar e Borda */
+.custom-navbar-border {
+    border-bottom-color: var(--cor-borda-clara) !important;
+}
+
+.custom-btn-outline {
+    border-color: var(--cor-borda-clara) !important;
+    color: var(--cor-texto-muted) !important;
+}
+
+/* Estilos para os Cards de Pedido */
+.custom-card-delivered {
+    border-left: 5px solid var(--cor-sucesso);
+}
+
+.custom-card-pending {
+    border-left: 5px solid var(--cor-aviso);
+}
+
+.custom-border-light {
+    border-color: var(--cor-borda-clara) !important;
+}
+
+/* Estilo para o ícone do Xarope (Cápsula) no Pedido Pendente */
+.custom-card-pending .bi-capsule {
+    /* Simula a aparência de um ícone dentro de uma caixa como na imagem original */
+    padding: 5px;
+    border: 1px solid var(--cor-borda-clara);
+    border-radius: 5px;
+    background-color: #fff;
+    color: var(--cor-texto-muted) !important;
+}
+
+/* Rodapé (Azul Escuro) */
+.custom-bg-dark {
+    background-color: var(--azul-escuro) !important;
+}
+
+.custom-text-footer {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.custom-link-footer {
+    color: rgba(255, 255, 255, 0.75) !important;
+    text-decoration: none;
+}
+
+.custom-link-footer:hover {
+    color: #fff !important;
+}
+
+.custom-hr-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Cor de Sucesso padrão do Bootstrap para o checkmark */
+.text-success {
+    color: var(--cor-sucesso) !important;
+}

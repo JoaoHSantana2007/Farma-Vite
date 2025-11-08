@@ -1,0 +1,170 @@
+/* Paleta de Cores Definida pelo Usuário */
+:root {
+    --cor-primaria: #007bff; /* Azul de destaque (links, botões, badge) */
+    --cor-fundo-claro: #f8f9fa; /* Fundo principal */
+    --azul-escuro: #0056b3; /* Cor do Rodapé */
+    --cor-borda-clara: #dee2e6; /* Linhas de separação */
+    --cor-texto-muted: #6c757d; /* Texto secundário (drogaria, subtotal) */
+    --cor-sucesso: #28a745; /* Cor verde para 'Entregue' */
+    --cor-aviso: #ffc107; /* Cor amarela para 'Pendente' */
+}
+
+/* Estilos de Fundo e Texto Globais */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--cor-fundo-claro);
+}
+
+.custom-bg-light {
+    background-color: var(--cor-fundo-claro) !important;
+}
+
+.custom-text-muted {
+    color: var(--cor-texto-muted) !important;
+}
+
+/* Cor Primária (Usada para destaque, como o logo no topo, botões e badge) */
+.custom-text-primary {
+    color: var(--cor-primaria) !important;
+}
+
+.custom-bg-primary {
+    background-color: var(--cor-primaria) !important;
+}
+
+.custom-btn-primary {
+    background-color: var(--cor-primaria) !important;
+    border-color: var(--cor-primaria) !important;
+}
+
+.custom-btn-primary:hover {
+    background-color: var(--azul-escuro) !important;
+    border-color: var(--azul-escuro) !important;
+}
+
+/* Navbar e Borda */
+.custom-navbar-border {
+    border-bottom-color: var(--cor-borda-clara) !important;
+}
+
+.custom-btn-outline {
+    border-color: var(--cor-borda-clara) !important;
+    color: var(--cor-texto-muted) !important;
+}
+.custom-btn-outline:hover {
+    background-color: var(--cor-fundo-claro) !important;
+    color: var(--cor-texto-muted) !important;
+}
+
+/* --- ESTILOS PÁGINA 'MEUS PEDIDOS' --- */
+.custom-card-delivered {
+    border-left: 5px solid var(--cor-sucesso);
+}
+
+.custom-card-pending {
+    border-left: 5px solid var(--cor-aviso);
+}
+
+.custom-border-light {
+    border-color: var(--cor-borda-clara) !important;
+}
+
+.custom-card-pending .bi-capsule {
+    padding: 5px;
+    border: 1px solid var(--cor-borda-clara);
+    border-radius: 5px;
+    background-color: #fff;
+    color: var(--cor-texto-muted) !important;
+}
+
+
+/* --- NOVOS ESTILOS PÁGINA 'RESULTADOS DE BUSCA' --- */
+
+.product-card {
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda-clara);
+    transition: box-shadow 0.2s ease-in-out;
+}
+.product-card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.product-card .card-header {
+    border-bottom: 1px solid var(--cor-borda-clara);
+}
+
+/* Logo da Farmácia (Círculo com Iniciais) */
+.pharmacy-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Cores de fundo auxiliares para os logos */
+.bg-purple { background-color: #6f42c1 !important; }
+.bg-info { background-color: #0dcaf0 !important; }
+
+/* Imagem do Produto */
+.product-card .card-img-top {
+    width: 100%;
+    height: 160px; /* Altura fixa para alinhar as grades */
+    object-fit: contain; /* Garante que a imagem caiba sem distorcer */
+    padding: 1rem;
+}
+
+/* Badge de Desconto */
+.product-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Texto do Card */
+.product-card small {
+    font-size: 0.85rem;
+}
+
+.product-card .card-title-text {
+    /* Evita que títulos de 3 linhas quebrem o layout */
+    min-height: 48px; 
+}
+
+/* Botão de Adicionar */
+.product-card .btn {
+    padding: 0.65rem;
+}
+
+
+/* --- ESTILOS DO RODAPÉ (Idêntico) --- */
+.custom-bg-dark {
+    background-color: var(--azul-escuro) !important;
+}
+
+.custom-text-footer {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.custom-link-footer {
+    color: rgba(255, 255, 255, 0.75) !important;
+    text-decoration: none;
+}
+
+.custom-link-footer:hover {
+    color: #fff !important;
+}
+
+.custom-hr-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Cor de Sucesso padrão do Bootstrap para o checkmark */
+.text-success {
+    color: var(--cor-sucesso) !important;
+}

@@ -146,23 +146,25 @@
                   <p class="mb-0 small text-muted">Pagamento Instantâneo</p>
                 </div>
               </label>
-              <div
-                class="detalhes-metodo detalhes-pix p-3 border-top-0 border rounded mt-n1"
-              >
-                <p class="small text-muted mb-3">
-                  Escaneie o QR Code ou copie o código PIX para realizar o
-                  pagamento
-                </p>
-                <div
-                  class="bloco-codigo-pix bg-light p-3 border rounded d-flex justify-content-between align-items-center"
-                >
-                  <p class="mb-0 codigo-pix">
-                    Escaneie o QR Code ou copie o código PIX para realizar o
-                    pagamento
-                  </p>
-                  <button class="btn btn-primary btn-sm btn-copiar-pix">
-                    <i class="far fa-copy me-1"></i> Copiar
-                  </button>
+              <div class="detalhes-metodo detalhes-pix p-3 border-top-0 border rounded mt-n1">
+                <p class="small text-muted mb-3">Escaneie o QR Code ou copie o código PIX para realizar o pagamento</p>
+                <div class="d-flex flex-row flex-wrap align-items-center gap-3">
+                  <div class="qr-wrapper">
+                    <!-- Ícone do QR (não carregar imagem externa) -->
+                    <div class="qr-icon" aria-hidden="false" role="img" aria-label="QR Code PIX">
+                      <i class="fas fa-qrcode fa-4x"></i>
+                    </div>
+                  </div>
+
+                  <div class="bloco-codigo-pix bg-light p-3 border rounded d-flex flex-column gap-2" style="min-width:220px;">
+                    <p class="mb-0 codigo-pix">00020101021226800014br.gov.bcb.pix0114+551199999999952040000530398654065804BR.GOV.BCB.PIX0114+5511999999995204000053039865406</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-muted">Código PIX</small>
+                      <button class="btn btn-primary btn-sm btn-copiar-pix" data-pix="00020101021226800014br.gov.bcb.pix0114+551199999999952040000530398654065804BR.GOV.BCB.PIX0114+5511999999995204000053039865406">
+                        <i class="far fa-copy me-1"></i> Copiar
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -180,13 +182,42 @@
                   <p class="mb-0 small text-muted">Parcelamento disponível</p>
                 </div>
               </label>
-              <div
-                class="detalhes-metodo detalhes-credito p-3 border-top-0 border rounded mt-n1 d-none"
-              >
-                <p class="small text-muted mb-0">
-                  Insira os dados do seu cartão. Opções de parcelamento serão
-                  exibidas.
-                </p>
+              <div class="detalhes-metodo detalhes-credito p-3 border-top-0 border rounded mt-n1 d-none">
+                <div class="d-flex flex-column flex-lg-row gap-3">
+                  <div class="card-preview bg-primary text-white p-3 rounded" style="min-width:260px;">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                      <div class="chip" style="width:40px;height:28px;background:rgba(255,255,255,0.4);border-radius:4px;"></div>
+                      <div class="brand">VISA</div>
+                    </div>
+                    <div class="card-number fs-5 fw-bold" aria-hidden="true">XXXX XXXX XXXX 1234</div>
+                    <div class="d-flex justify-content-between mt-3 small">
+                      <div class="card-holder">NOME DO TITULAR</div>
+                      <div class="card-expiry">MM/AA</div>
+                    </div>
+                  </div>
+
+                  <div class="card-form flex-grow-1">
+                    <p class="small text-muted mb-2">Insira os dados do seu cartão. Opções de parcelamento serão exibidas.</p>
+                    <div class="row g-2">
+                      <div class="col-12">
+                        <label class="form-label small">Nome no cartão</label>
+                        <input type="text" name="cardHolder" class="form-control" placeholder="Nome (como escrito no cartão)">
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label small">Número do cartão</label>
+                        <input type="text" name="cardNumber" class="form-control" placeholder="0000 0000 0000 0000" inputmode="numeric">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label small">Validade (MM/AA)</label>
+                        <input type="text" name="cardExpiry" class="form-control" placeholder="MM/AA" inputmode="numeric">
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label small">CVV</label>
+                        <input type="text" name="cardCvv" class="form-control" placeholder="123" inputmode="numeric">
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="cartao-metodo mb-3" data-metodo="debito">
