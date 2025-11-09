@@ -9,7 +9,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="../../../../style/usuario/public/compra/pedidos.css" />
     <link
@@ -20,60 +20,14 @@
     <title>FarmaVite</title>
   </head>
     <body>
-      <nav
-        class="navbar navbar-expand-lg bg-white border-bottom custom-navbar-border"
-      >
-        <div class="container-fluid py-2 px-5">
-          <a class="navbar-brand fw-bold custom-text-primary" href="#"
-            >FarmaVite</a
-          >
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Farmácias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Produtos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Seja Entregador</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Seja Parceiro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">Meus Pedidos</a>
-              </li>
-            </ul>
-          </div>
-          <div class="d-flex align-items-center">
-            <a href="#" class="btn btn-link position-relative text-dark me-3">
-              <i class="bi bi-cart3"></i>
-              <span
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill custom-bg-primary"
-              >
-                2
-              </span>
-            </a>
-            <a
-              href="#"
-              class="btn btn-outline-secondary me-2 custom-btn-outline"
-            >
-              <i class="bi bi-person-circle"></i>
-            </a>
-            <button class="btn custom-btn-primary fw-bold text-white">
-              Cadastrar
-            </button>
-          </div>
-        </div>
-      </nav>
+      <div data-include="/pages/usuario/public/nav.html"></div>
 
-      <main class="container-fluid px-5 py-4 custom-bg-light">
+  <main class="container-fluid px-5 py-4">
         <h2 class="mb-4">Meus Pedidos</h2>
 
         <div class="row g-4">
           <div class="col-md-6">
-            <div class="card shadow-sm p-4 h-100 custom-card-delivered">
+            <div class="card shadow-sm p-4 h-100">
               <div
                 class="d-flex justify-content-between align-items-center mb-3"
               >
@@ -82,33 +36,22 @@
               </div>
 
               <p class="fw-bold mb-2">Itens Comprados</p>
-              <div
-                class="d-flex justify-content-between align-items-start border-bottom py-2 custom-border-light"
-              >
+              <div class="d-flex justify-content-between align-items-start border-bottom py-2">
                 <div>
                   <p class="mb-0 fw-bold">Dipirona 500mg</p>
-                  <small class="custom-text-muted d-block"
-                    >Farmácia Central</small
-                  >
-                  <small class="custom-text-muted d-block">2 unidades</small>
+                  <small class="text-muted d-block">Farmácia Central</small>
+                  <small class="text-muted d-block">2 unidades</small>
                 </div>
                 <div class="text-end">
                   <p class="mb-0 fw-bold">R$ 17,00</p>
-                  <small
-                    class="text-decoration-line-through custom-text-muted d-block"
-                    >R$ 24,90</small
-                  >
+                  <small class="text-decoration-line-through text-muted d-block">R$ 24,90</small>
                 </div>
               </div>
-              <div
-                class="d-flex justify-content-between align-items-start border-bottom py-2 custom-border-light"
-              >
+              <div class="d-flex justify-content-between align-items-start border-bottom py-2">
                 <div>
                   <p class="mb-0 fw-bold">Vitamina C 1g</p>
-                  <small class="custom-text-muted d-block"
-                    >Drogaria São Paulo</small
-                  >
-                  <small class="custom-text-muted d-block">1 unidade</small>
+                  <small class="text-muted d-block">Drogaria São Paulo</small>
+                  <small class="text-muted d-block">1 unidade</small>
                 </div>
                 <div class="text-end">
                   <p class="mb-0 fw-bold">R$ 24,90</p>
@@ -121,25 +64,23 @@
 
               <p class="fw-bold mt-4 mb-2">Resumo do Pedido</p>
               <div class="d-flex justify-content-between py-1">
-                <small class="custom-text-muted">Subtotal (3 itens)</small>
+                <small class="text-muted">Subtotal (3 itens)</small>
                 <small class="fw-bold">R$ 60,65</small>
               </div>
               <div class="d-flex justify-content-between py-1">
-                <small class="custom-text-muted">Taxa de entrega</small>
+                <small class="text-muted">Taxa de entrega</small>
                 <small class="fw-bold">R$ 4,90</small>
               </div>
               <div class="d-flex justify-content-between py-1">
-                <small class="custom-text-muted">Taxa de serviço</small>
+                <small class="text-muted">Taxa de serviço</small>
                 <small class="fw-bold">R$ 2,50</small>
               </div>
               <div class="d-flex justify-content-between py-1">
-                <small class="custom-text-muted">Economia</small>
+                <small class="text-muted">Economia</small>
                 <small class="text-danger fw-bold">-R$ 15,75</small>
               </div>
 
-              <div
-                class="d-flex justify-content-between border-top pt-3 mt-3 custom-border-light"
-              >
+              <div class="d-flex justify-content-between border-top pt-3 mt-3">
                 <p class="fw-bold h5 mb-0">Total</p>
                 <p class="fw-bold h5 mb-0">R$ 68,05</p>
               </div>
@@ -151,7 +92,7 @@
           </div>
 
           <div class="col-md-6">
-            <div class="card shadow-sm p-4 h-100 custom-card-pending">
+            <div class="card shadow-sm p-4 h-100">
               <div
                 class="d-flex justify-content-between align-items-center mb-3"
               >
@@ -159,49 +100,39 @@
               </div>
 
               <p class="fw-bold mb-2">Itens Comprados</p>
-              <div
-                class="d-flex justify-content-between align-items-start border-bottom py-2 custom-border-light"
-              >
+              <div class="d-flex justify-content-between align-items-start border-bottom py-2">
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-capsule fs-5 me-3 text-secondary"></i>
                   <div>
                     <p class="mb-0 fw-bold">Xarope expectorante</p>
-                    <small class="custom-text-muted d-block"
-                      >Drogaria Vita</small
-                    >
-                    <small class="custom-text-muted d-block">1 unidade</small>
+                    <small class="text-muted d-block">Drogaria Vita</small>
+                    <small class="text-muted d-block">1 unidade</small>
                   </div>
                 </div>
                 <div class="text-end">
                   <p class="mb-0 fw-bold">R$ 35,90</p>
-                  <small
-                    class="text-decoration-line-through custom-text-muted d-block"
-                    >R$ 41,50</small
-                  >
+                  <small class="text-decoration-line-through text-muted d-block">R$ 41,50</small>
                 </div>
               </div>
 
               <p class="fw-bold mt-4 mb-2">Resumo do Pedido</p>
               <div class="d-flex justify-content-between py-1">
-                <small class="custom-text-muted">Subtotal (1 item)</small>
+                <small class="text-muted">Subtotal (1 item)</small>
                 <small class="fw-bold">R$ 35,90</small>
               </div>
               <div class="d-flex justify-content-between py-1">
-                <small class="custom-text-muted">Taxa de entrega</small>
+                <small class="text-muted">Taxa de entrega</small>
                 <small class="fw-bold">R$ 3,90</small>
               </div>
               <div class="d-flex justify-content-between py-1">
-                <small class="custom-text-muted">Taxa de serviço</small>
+                <small class="text-muted">Taxa de serviço</small>
                 <small class="fw-bold">R$ 2,50</small>
               </div>
               <div class="d-flex justify-content-between py-1">
-                <small class="custom-text-muted">Economia</small>
+                <small class="text-muted">Economia</small>
                 <small class="text-danger fw-bold">-R$ 6,00</small>
               </div>
 
-              <div
-                class="d-flex justify-content-between border-top pt-3 mt-3 custom-border-light"
-              >
+              <div class="d-flex justify-content-between border-top pt-3 mt-3">
                 <p class="fw-bold h5 mb-0">Total</p>
                 <p class="fw-bold h5 mb-0">R$ 45,30</p>
               </div>
@@ -213,94 +144,9 @@
           </div>
         </div>
       </main>
-          <footer class="text-white pt-5 pb-3 custom-bg-dark">
-            <div class="container grade-rodape pb-4">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="logo fs-4 fw-bold mb-3">
-              <i class="fas fa-prescription-bottle-alt me-1"></i> FarmaVite
-            </div>
-            <p class="small">
-              A plataforma que conecta você às melhores farmácias da sua região
-              com entrega rápida e segura.
-            </p>
-            <div class="links-sociais mt-3 fs-5">
-              <i class="fab fa-facebook-f me-3"></i>
-              <i class="fab fa-instagram me-3"></i>
-              <i class="fab fa-twitter me-3"></i>
-              <i class="fab fa-youtube"></i>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3">Links Rápidos</h5>
-            <ul class="list-unstyled small">
-              <li>
-                <a href="#" class="text-decoration-none text-light"
-                  >Farmácias</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-decoration-none text-light">Produtos</a>
-              </li>
-              <li>
-                <a href="#" class="text-decoration-none text-light"
-                  >Seja Entregador</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-decoration-none text-light"
-                  >Seja Parceiro</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3">Categorias</h5>
-            <div class="d-flex small">
-              <ul class="list-unstyled me-4">
-                <li>Medicamentos</li>
-                <li>Beleza</li>
-                <li>Bebê</li>
-                <li>Vitaminas</li>
-              </ul>
-              <ul class="list-unstyled">
-                <li>Higiene</li>
-                <li>Demarto</li>
-                <li>Saúde</li>
-                <li>Consultas</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3">Contato</h5>
-            <ul class="list-unstyled small">
-              <li><i class="fas fa-phone me-2"></i> (11) 3000-3000</li>
-              <li>
-                <i class="fas fa-envelope me-2"></i> contato@farmavite.com
-              </li>
-              <li><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="rodape-inferior bg-dark-blue py-3 small">
-        <div
-          class="container d-flex justify-content-between flex-column flex-md-row text-center"
-        >
-          <p class="mb-0">© 2024 FarmaVite. Todos os direitos reservados.</p>
-          <div class="links-politicas mt-2 mt-md-0">
-            <a href="#" class="text-white text-decoration-none me-3"
-              >Termos de Uso</a
-            >
-            <a href="#" class="text-white text-decoration-none me-3"
-              >Política de Privacidade</a
-            >
-            <a href="#" class="text-white text-decoration-none">Ajuda</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+      <div data-include="/pages/usuario/public/footer.html"></div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/includes.js"></script>
     </body>
   </html>
 </html>

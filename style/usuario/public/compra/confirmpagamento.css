@@ -1,21 +1,6 @@
-:root {
-    --cor-primaria: #007bff;
-    --cor-sucesso: #4CAF50;
-    --cor-fundo-claro: #f8f9fa;
-    --azul-escuro: #0056b3;
-}
-
-body {
-    background-color: var(--cor-fundo-claro);
-}
-
-.logo {
-    color: var(--cor-primaria) !important;
-}
-
-.icone-btn, .carrinho-btn {
-    color: #6c757d !important;
-}
+@import url("../../../usuario/geral.css");
+@import url("../../../usuario/nav.css");
+@import url("../../../usuario/footer.css");
 
 .container-icone-sucesso {
     width: 60px;
@@ -103,34 +88,4 @@ body {
     background-color: var(--cor-primaria);
     color: white;
     border-color: #9ac2ff;
-}
-
-.rodape {
-    background-color: var(--cor-primaria) !important;
-}
-
-.bg-dark-blue {
-    background-color: var(--azul-escuro) !important;
-}
-
-.rodape a {
-    color: #c9e1ff !important;
-}
-
-.rodape li {
-    margin-bottom: 5px;
-}
-
-@media (max-width: 768px) {
-    .container-passos::before {
-        display: none;
-    }
-    .container-passos {
-        flex-direction: column;
-        align-items: center;
-    }
-    .passo {
-        width: 100%;
-        margin-bottom: 15px !important;
-    }
 }

@@ -1,55 +1,6 @@
-:root {
-    --cor-primaria: #007bff;
-    --cor-fundo-claro: #f8f9fa;
-    --azul-escuro: #0056b3;
-    --cor-borda-clara: #dee2e6;
-    --cor-texto-muted: #6c757d;
-}
-
-body {
-    background-color: var(--cor-fundo-claro);
-    font-family: Arial, sans-serif;
-}
-
-.logo {
-    color: var(--cor-primaria) !important;
-}
-
-.carrinho-btn {
-    color: #6c757d !important;
-}
-
-.filtros-ordenacao {
-    border-bottom: 1px solid var(--cor-borda-clara);
-    padding-bottom: 1rem;
-    margin-bottom: 1.5rem !important;
-}
-
-.filtro-btn {
-    color: #495057;
-    background-color: white;
-    border: 1px solid #ced4da;
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
-}
-
-.filtro-btn:hover {
-    background-color: #e9ecef;
-}
-
-.cartao-produto {
-    border: 1px solid var(--cor-borda-clara);
-    border-radius: 0.5rem;
-    overflow: hidden;
-    height: 100%;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.03); 
-}
-
-.cabecalho-farmacia {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #f1f1f1;
-    background-color: #f8f9fa; 
-}
+@import url('../../geral.css');
+@import url('../../nav.css');
+@import url('../../footer.css');
 
 .icone-farmacia {
     width: 30px;
@@ -128,12 +79,4 @@ body {
     border-color: var(--cor-primaria);
     font-size: 0.95rem;
     font-weight: 600;
-}
-
-.rodape {
-    background-color: var(--cor-primaria) !important;
-}
-
-.bg-dark-blue {
-    background-color: var(--azul-escuro) !important;
 }

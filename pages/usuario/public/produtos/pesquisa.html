@@ -9,68 +9,15 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="../../../../style/usuario/public/produtos/pesquisa.css"
-    />
-    <link
-      rel="shortcut icon"
-      href="../../../../img/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="stylesheet" href="../../../../style/usuario/public/produtos/pesquisa.css" />
+    <link rel="shortcut icon" href="../../../../img/favicon.ico" type="image/x-icon" />
     <title>FarmaVite</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
-      <div class="container">
-        <a class="navbar-brand logo" href="#">
-          <i class="fas fa-prescription-bottle-alt me-1"></i> FarmaVite
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Alternar navegação"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#">Farmácias</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Seja Entregador</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Seja Parceiro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Meus Pedidos</a>
-            </li>
-          </ul>
-        </div>
-        <div class="d-flex align-items-center">
-          <a href="#" class="btn me-3 icone-btn"><i class="fas fa-user"></i></a>
-          <a href="#" class="btn me-3 carrinho-btn position-relative">
-            <i class="fas fa-shopping-cart"></i>
-            <span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary contagem-carrinho"
-              >1</span
-            >
-          </a>
-          <a href="#" class="btn btn-primary">Cadastrar</a>
-        </div>
-      </div>
-    </nav>
-    <main class="container-fluid px-5 py-4 custom-bg-light">
+    <div data-include="/pages/usuario/public/nav.html"></div>
+    <main class="container-fluid px-5 py-4 bg-light">
       <div
         class="d-flex justify-content-between align-items-center mb-2 flex-wrap"
       >
@@ -78,12 +25,12 @@
           Resultados para: <strong class="fw-bold">"Vitamina D3"</strong>
         </h2>
         <div class="d-flex mt-2 mt-md-0">
-          <button class="btn btn-outline-secondary custom-btn-outline me-2">
+          <button class="btn btn-outline-secondary me-2">
             <i class="bi bi-filter me-1"></i> Filtrar por
           </button>
           <div class="dropdown">
             <button
-              class="btn btn-outline-secondary custom-btn-outline dropdown-toggle"
+              class="btn btn-outline-secondary dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -98,7 +45,7 @@
           </div>
         </div>
       </div>
-      <p class="custom-text-muted mb-4">8 produtos encontrados</p>
+      <p class="text-muted mb-4">8 produtos encontrados</p>
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
         <div class="col">
@@ -110,19 +57,19 @@
                 <span class="pharmacy-logo bg-info text-white">DC</span>
                 <div class="ms-2">
                   <small class="fw-bold d-block">Drogaria Central</small>
-                  <small class="custom-text-muted"
+                  <small class="text-muted"
                     ><i class="bi bi-star-fill text-warning"></i> 4.7 | 0.8
                     km</small
                   >
-                  <small class="custom-text-muted d-block">20-30 min</small>
+                  <small class="text-muted d-block">20-30 min</small>
                 </div>
               </div>
-              <i class="bi bi-chevron-up custom-text-muted"></i>
+              <i class="bi bi-chevron-up text-muted"></i>
             </div>
             <div class="position-relative">
               <span class="badge product-badge bg-danger">27%</span>
               <img
-                src="https://via.placeholder.com/200x150.png?text=Vitamina+D3"
+                src="../../../../img/pesquisa/Vitamina-D3-1000UI.webp"
                 class="card-img-top"
                 alt="Vitamina D3 1000UI"
               />
@@ -131,14 +78,14 @@
               <p class="fw-bold mb-1 card-title-text">
                 Vitamina D3 1000UI - 30 Cápsulas
               </p>
-              <small class="custom-text-muted mb-2"
+              <small class="text-muted mb-2"
                 ><i class="bi bi-star-fill text-warning"></i> 4.8 (392)</small
               >
               <h4 class="fw-bold mb-0">R$ 28,50</h4>
-              <small class="text-decoration-line-through custom-text-muted"
+              <small class="text-decoration-line-through text-muted"
                 >R$ 36,30</small
               >
-              <button class="btn custom-btn-primary w-100 mt-auto pt-2 fw-bold">
+              <button class="btn btn-primary w-100 mt-auto pt-2 fw-bold">
                 Adicionar ao Carrinho
               </button>
             </div>
@@ -154,19 +101,19 @@
                 <span class="pharmacy-logo bg-success text-white">DS</span>
                 <div class="ms-2">
                   <small class="fw-bold d-block">Drogaria Saúde</small>
-                  <small class="custom-text-muted"
+                  <small class="text-muted"
                     ><i class="bi bi-star-fill text-warning"></i> 4.6 | 1.8
                     km</small
                   >
-                  <small class="custom-text-muted d-block">30-35 min</small>
+                  <small class="text-muted d-block">30-35 min</small>
                 </div>
               </div>
-              <i class="bi bi-chevron-up custom-text-muted"></i>
+              <i class="bi bi-chevron-up text-muted"></i>
             </div>
             <div class="position-relative">
               <span class="badge product-badge bg-danger">27%</span>
               <img
-                src="https://via.placeholder.com/200x150.png?text=Vitamina+Infantil"
+                src="../../../../img/pesquisa/Vitamina-D3-Infantil-20ml.jpg"
                 class="card-img-top"
                 alt="Vitamina D3 Infantil"
               />
@@ -175,14 +122,14 @@
               <p class="fw-bold mb-1 card-title-text">
                 Vitamina D3 Infantil - 20ml
               </p>
-              <small class="custom-text-muted mb-2"
+              <small class="text-muted mb-2"
                 ><i class="bi bi-star-fill text-warning"></i> 4.6 (187)</small
               >
               <h4 class="fw-bold mb-0">R$ 38,90</h4>
-              <small class="text-decoration-line-through custom-text-muted"
+              <small class="text-decoration-line-through text-muted"
                 >R$ 49,90</small
               >
-              <button class="btn custom-btn-primary w-100 mt-auto pt-2 fw-bold">
+              <button class="btn btn-primary w-100 mt-auto pt-2 fw-bold">
                 Adicionar ao Carrinho
               </button>
             </div>
@@ -198,19 +145,19 @@
                 <span class="pharmacy-logo bg-purple text-white">FV</span>
                 <div class="ms-2">
                   <small class="fw-bold d-block">Farmácia Vida</small>
-                  <small class="custom-text-muted"
+                  <small class="text-muted"
                     ><i class="bi bi-star-fill text-warning"></i> 4.5 | 2.5
                     km</small
                   >
-                  <small class="custom-text-muted d-block">25-30 min</small>
+                  <small class="text-muted d-block">25-30 min</small>
                 </div>
               </div>
-              <i class="bi bi-chevron-up custom-text-muted"></i>
+              <i class="bi bi-chevron-up text-muted"></i>
             </div>
             <div class="position-relative">
               <span class="badge product-badge bg-danger">23%</span>
               <img
-                src="https://via.placeholder.com/200x150.png?text=Vitamina+Mastigavel"
+                src="../../../../img/pesquisa/Vitamina-D3-Mastigável-60-Comprimidos.jpeg"
                 class="card-img-top"
                 alt="Vitamina D3 Mastigável"
               />
@@ -219,14 +166,14 @@
               <p class="fw-bold mb-1 card-title-text">
                 Vitamina D3 Mastigável - 60 Comprimidos
               </p>
-              <small class="custom-text-muted mb-2"
+              <small class="text-muted mb-2"
                 ><i class="bi bi-star-fill text-warning"></i> 4.5</small
               >
               <h4 class="fw-bold mb-0">R$ 43,90</h4>
-              <small class="text-decoration-line-through custom-text-muted"
+              <small class="text-decoration-line-through text-muted"
                 >R$ 56,90</small
               >
-              <button class="btn custom-btn-primary w-100 mt-auto pt-2 fw-bold">
+              <button class="btn btn-primary w-100 mt-auto pt-2 fw-bold">
                 Adicionar ao Carrinho
               </button>
             </div>
@@ -242,19 +189,19 @@
                 <span class="pharmacy-logo bg-primary text-white">SP</span>
                 <div class="ms-2">
                   <small class="fw-bold d-block">Farmácia São Paulo</small>
-                  <small class="custom-text-muted"
+                  <small class="text-muted"
                     ><i class="bi bi-star-fill text-warning"></i> 4.8 | 1.2
                     km</small
                   >
-                  <small class="custom-text-muted d-block">25-35 min</small>
+                  <small class="text-muted d-block">25-35 min</small>
                 </div>
               </div>
-              <i class="bi bi-chevron-up custom-text-muted"></i>
+              <i class="bi bi-chevron-up text-muted"></i>
             </div>
             <div class="position-relative">
               <span class="badge product-badge bg-danger">28%</span>
               <img
-                src="https://via.placeholder.com/200x150.png?text=Vitamina+2000UI"
+                src="../../../../img/pesquisa/Vitamina-D3-Mastigável-60-Comprimidos.jpeg"
                 class="card-img-top"
                 alt="Vitamina D3 2000UI"
               />
@@ -263,14 +210,14 @@
               <p class="fw-bold mb-1 card-title-text">
                 Vitamina D3 2000UI - 60 Cápsulas
               </p>
-              <small class="custom-text-muted mb-2"
+              <small class="text-muted mb-2"
                 ><i class="bi bi-star-fill text-warning"></i> 4.8 (224)</small
               >
               <h4 class="fw-bold mb-0">R$ 45,90</h4>
-              <small class="text-decoration-line-through custom-text-muted"
+              <small class="text-decoration-line-through text-muted"
                 >R$ 59,90</small
               >
-              <button class="btn custom-btn-primary w-100 mt-auto pt-2 fw-bold">
+              <button class="btn btn-primary w-100 mt-auto pt-2 fw-bold">
                 Adicionar ao Carrinho
               </button>
             </div>
@@ -286,19 +233,19 @@
                 <span class="pharmacy-logo bg-warning text-dark">FM</span>
                 <div class="ms-2">
                   <small class="fw-bold d-block">Farmácia Moderna</small>
-                  <small class="custom-text-muted"
+                  <small class="text-muted"
                     ><i class="bi bi-star-fill text-warning"></i> 4.5 | 3.2
                     km</small
                   >
-                  <small class="custom-text-muted d-block">35-45 min</small>
+                  <small class="text-muted d-block">35-45 min</small>
                 </div>
               </div>
-              <i class="bi bi-chevron-up custom-text-muted"></i>
+              <i class="bi bi-chevron-up text-muted"></i>
             </div>
             <div class="position-relative">
               <span class="badge product-badge bg-danger">24%</span>
               <img
-                src="https://via.placeholder.com/200x150.png?text=Vitamina+Liquida"
+                src="../../../../img/pesquisa/Vitamina-D3-Líquida-30ml.webp"
                 class="card-img-top"
                 alt="Vitamina D3 Liquida"
               />
@@ -307,14 +254,14 @@
               <p class="fw-bold mb-1 card-title-text">
                 Vitamina D3 Líquida - 30ml
               </p>
-              <small class="custom-text-muted mb-2"
+              <small class="text-muted mb-2"
                 ><i class="bi bi-star-fill text-warning"></i> 4.4 (88)</small
               >
               <h4 class="fw-bold mb-0">R$ 52,90</h4>
-              <small class="text-decoration-line-through custom-text-muted"
+              <small class="text-decoration-line-through text-muted"
                 >R$ 68,90</small
               >
-              <button class="btn custom-btn-primary w-100 mt-auto pt-2 fw-bold">
+              <button class="btn btn-primary w-100 mt-auto pt-2 fw-bold">
                 Adicionar ao Carrinho
               </button>
             </div>
@@ -330,19 +277,19 @@
                 <span class="pharmacy-logo bg-danger text-white">DE</span>
                 <div class="ms-2">
                   <small class="fw-bold d-block">Drogasil Express</small>
-                  <small class="custom-text-muted"
+                  <small class="text-muted"
                     ><i class="bi bi-star-fill text-warning"></i> 4.5 | 1.5
                     km</small
                   >
-                  <small class="custom-text-muted d-block">25-35 min</small>
+                  <small class="text-muted d-block">25-35 min</small>
                 </div>
               </div>
-              <i class="bi bi-chevron-up custom-text-muted"></i>
+              <i class="bi bi-chevron-up text-muted"></i>
             </div>
             <div class="position-relative">
               <span class="badge product-badge bg-danger">26%</span>
               <img
-                src="https://via.placeholder.com/200x150.png?text=Vitamina+D3+K2"
+                src="../../../../img/pesquisa/Vitamina-D3+K2-60-Cápsulas.jpeg"
                 class="card-img-top"
                 alt="Vitamina D3 + K2"
               />
@@ -351,14 +298,14 @@
               <p class="fw-bold mb-1 card-title-text">
                 Vitamina D3 + K2 - 60 Cápsulas
               </p>
-              <small class="custom-text-muted mb-2"
+              <small class="text-muted mb-2"
                 ><i class="bi bi-star-fill text-warning"></i> 4.7 (1198)</small
               >
               <h4 class="fw-bold mb-0">R$ 67,90</h4>
-              <small class="text-decoration-line-through custom-text-muted"
+              <small class="text-decoration-line-through text-muted"
                 >R$ 89,90</small
               >
-              <button class="btn custom-btn-primary w-100 mt-auto pt-2 fw-bold">
+              <button class="btn btn-primary w-100 mt-auto pt-2 fw-bold">
                 Adicionar ao Carrinho
               </button>
             </div>
@@ -374,19 +321,19 @@
                 <span class="pharmacy-logo bg-success text-white">FP</span>
                 <div class="ms-2">
                   <small class="fw-bold d-block">Farmácia Popular</small>
-                  <small class="custom-text-muted"
+                  <small class="text-muted"
                     ><i class="bi bi-star-fill text-warning"></i> 4.9 | 2.1
                     km</small
                   >
-                  <small class="custom-text-muted d-block">30-40 min</small>
+                  <small class="text-muted d-block">30-40 min</small>
                 </div>
               </div>
-              <i class="bi bi-chevron-up custom-text-muted"></i>
+              <i class="bi bi-chevron-up text-muted"></i>
             </div>
             <div class="position-relative">
               <span class="badge product-badge bg-danger">25%</span>
               <img
-                src="https://via.placeholder.com/200x150.png?text=Vitamina+5000UI"
+                src="../../../../img/pesquisa/Vitamina-D3-5000UI-90-Cápsulas.jpeg"
                 class="card-img-top"
                 alt="Vitamina D3 5000UI"
               />
@@ -395,14 +342,14 @@
               <p class="fw-bold mb-1 card-title-text">
                 Vitamina D3 5000UI - 90 Cápsulas
               </p>
-              <small class="custom-text-muted mb-2"
+              <small class="text-muted mb-2"
                 ><i class="bi bi-star-fill text-warning"></i> 4.8 (842)</small
               >
               <h4 class="fw-bold mb-0">R$ 89,90</h4>
-              <small class="text-decoration-line-through custom-text-muted"
+              <small class="text-decoration-line-through text-muted"
                 >R$ 119,90</small
               >
-              <button class="btn custom-btn-primary w-100 mt-auto pt-2 fw-bold">
+              <button class="btn btn-primary w-100 mt-auto pt-2 fw-bold">
                 Adicionar ao Carrinho
               </button>
             </div>
@@ -418,19 +365,19 @@
                 <span class="pharmacy-logo bg-danger text-white">FE</span>
                 <div class="ms-2">
                   <small class="fw-bold d-block">Farmácia Elite</small>
-                  <small class="custom-text-muted"
+                  <small class="text-muted"
                     ><i class="bi bi-star-fill text-warning"></i> 4.9 | 1.1
                     km</small
                   >
-                  <small class="custom-text-muted d-block">20-30 min</small>
+                  <small class="text-muted d-block">20-30 min</small>
                 </div>
               </div>
-              <i class="bi bi-chevron-up custom-text-muted"></i>
+              <i class="bi bi-chevron-up text-muted"></i>
             </div>
             <div class="position-relative">
               <span class="badge product-badge bg-danger">31%</span>
               <img
-                src="https://via.placeholder.com/200x150.png?text=Vitamina+Premium"
+                src="../../../../img/pesquisa/Vitamina-D3-Premium-120-Cápsulas.jpg"
                 class="card-img-top"
                 alt="Vitamina D3 Premium"
               />
@@ -439,14 +386,14 @@
               <p class="fw-bold mb-1 card-title-text">
                 Vitamina D3 Premium - 120 Cápsulas
               </p>
-              <small class="custom-text-muted mb-2"
+              <small class="text-muted mb-2"
                 ><i class="bi bi-star-fill text-warning"></i> 4.9 (356)</small
               >
               <h4 class="fw-bold mb-0">R$ 125,90</h4>
-              <small class="text-decoration-line-through custom-text-muted"
+              <small class="text-decoration-line-through text-muted"
                 >R$ 179,90</small
               >
-              <button class="btn custom-btn-primary w-100 mt-auto pt-2 fw-bold">
+              <button class="btn btn-primary w-100 mt-auto pt-2 fw-bold">
                 Adicionar ao Carrinho
               </button>
             </div>
@@ -454,95 +401,8 @@
         </div>
       </div>
     </main>
-
-    <footer class="text-white pt-5 pb-3 custom-bg-dark">
-            <div class="container grade-rodape pb-4">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="logo fs-4 fw-bold mb-3">
-              <i class="fas fa-prescription-bottle-alt me-1"></i> FarmaVite
-            </div>
-            <p class="small">
-              A plataforma que conecta você às melhores farmácias da sua região
-              com entrega rápida e segura.
-            </p>
-            <div class="links-sociais mt-3 fs-5">
-              <i class="fab fa-facebook-f me-3"></i>
-              <i class="fab fa-instagram me-3"></i>
-              <i class="fab fa-twitter me-3"></i>
-              <i class="fab fa-youtube"></i>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3">Links Rápidos</h5>
-            <ul class="list-unstyled small">
-              <li>
-                <a href="#" class="text-decoration-none text-light"
-                  >Farmácias</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-decoration-none text-light">Produtos</a>
-              </li>
-              <li>
-                <a href="#" class="text-decoration-none text-light"
-                  >Seja Entregador</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-decoration-none text-light"
-                  >Seja Parceiro</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3">Categorias</h5>
-            <div class="d-flex small">
-              <ul class="list-unstyled me-4">
-                <li>Medicamentos</li>
-                <li>Beleza</li>
-                <li>Bebê</li>
-                <li>Vitaminas</li>
-              </ul>
-              <ul class="list-unstyled">
-                <li>Higiene</li>
-                <li>Demarto</li>
-                <li>Saúde</li>
-                <li>Consultas</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3">Contato</h5>
-            <ul class="list-unstyled small">
-              <li><i class="fas fa-phone me-2"></i> (11) 3000-3000</li>
-              <li>
-                <i class="fas fa-envelope me-2"></i> contato@farmavite.com
-              </li>
-              <li><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="rodape-inferior bg-dark-blue py-3 small">
-        <div
-          class="container d-flex justify-content-between flex-column flex-md-row text-center"
-        >
-          <p class="mb-0">© 2024 FarmaVite. Todos os direitos reservados.</p>
-          <div class="links-politicas mt-2 mt-md-0">
-            <a href="#" class="text-white text-decoration-none me-3"
-              >Termos de Uso</a
-            >
-            <a href="#" class="text-white text-decoration-none me-3"
-              >Política de Privacidade</a
-            >
-            <a href="#" class="text-white text-decoration-none">Ajuda</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
+    <div data-include="/pages/usuario/public/footer.html"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/includes.js"></script>
   </body>
 </html>

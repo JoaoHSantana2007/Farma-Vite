@@ -1,19 +1,9 @@
-/* Paleta de Cores Definida pelo Usuário */
-:root {
-    --cor-primaria: #007bff; /* Azul de destaque (links, botões, badge) */
-    --cor-fundo-claro: #f8f9fa; /* Fundo principal */
-    --azul-escuro: #0056b3; /* Cor do Rodapé */
-    --cor-borda-clara: #dee2e6; /* Linhas de separação */
-    --cor-texto-muted: #6c757d; /* Texto secundário (drogaria, subtotal) */
-    --cor-sucesso: #28a745; /* Cor verde para 'Entregue' */
-    --cor-aviso: #ffc107; /* Cor amarela para 'Pendente' */
-}
+@import url("../../../usuario/geral.css");
+@import url("../../../usuario/nav.css");
+@import url("../../../usuario/footer.css");
 
-/* Estilos de Fundo e Texto Globais */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: var(--cor-fundo-claro);
-}
+
+/* --- ESTILOS PÁGINA 'SEU CARRINHO' (mantidos apenas os usados) --- */
 
 .custom-bg-light {
     background-color: var(--cor-fundo-claro) !important;
@@ -23,13 +13,8 @@ body {
     color: var(--cor-texto-muted) !important;
 }
 
-/* Cor Primária (Usada para destaque, como o logo no topo, botões e badge) */
 .custom-text-primary {
     color: var(--cor-primaria) !important;
-}
-
-.custom-bg-primary {
-    background-color: var(--cor-primaria) !important;
 }
 
 .custom-btn-primary {
@@ -42,11 +27,6 @@ body {
     border-color: var(--azul-escuro) !important;
 }
 
-/* Navbar e Borda */
-.custom-navbar-border {
-    border-bottom-color: var(--cor-borda-clara) !important;
-}
-
 .custom-btn-outline {
     border-color: var(--cor-borda-clara) !important;
     color: var(--cor-texto-muted) !important;
@@ -56,84 +36,9 @@ body {
     color: var(--cor-texto-muted) !important;
 }
 
-/* --- ESTILOS PÁGINA 'MEUS PEDIDOS' --- */
-.custom-card-delivered {
-    border-left: 5px solid var(--cor-sucesso);
-}
-
-.custom-card-pending {
-    border-left: 5px solid var(--cor-aviso);
-}
-
 .custom-border-light {
     border-color: var(--cor-borda-clara) !important;
 }
-
-.custom-card-pending .bi-capsule {
-    padding: 5px;
-    border: 1px solid var(--cor-borda-clara);
-    border-radius: 5px;
-    background-color: #fff;
-    color: var(--cor-texto-muted) !important;
-}
-
-
-/* --- ESTILOS PÁGINA 'RESULTADOS DE BUSCA' --- */
-.product-card {
-    border-radius: 8px;
-    border: 1px solid var(--cor-borda-clara);
-    transition: box-shadow 0.2s ease-in-out;
-}
-.product-card:hover {
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
-}
-
-.product-card .card-header {
-    border-bottom: 1px solid var(--cor-borda-clara);
-}
-
-.pharmacy-logo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-.bg-purple { background-color: #6f42c1 !important; }
-.bg-info { background-color: #0dcaf0 !important; }
-
-.product-card .card-img-top {
-    width: 100%;
-    height: 160px;
-    object-fit: contain;
-    padding: 1rem;
-}
-
-.product-badge {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-}
-
-.product-card small {
-    font-size: 0.85rem;
-}
-
-.product-card .card-title-text {
-    min-height: 48px; 
-}
-
-.product-card .btn {
-    padding: 0.65rem;
-}
-
-/* --- NOVOS ESTILOS PÁGINA 'SEU CARRINHO' --- */
 
 /* Card "Dados para entrega" */
 .delivery-details p {
@@ -180,7 +85,6 @@ body {
     border-bottom-left-radius: 0;
 }
 
-
 /* Card "Resumo do Pedido" */
 .summary-item {
     font-size: 0.95rem;
@@ -196,32 +100,4 @@ body {
     /* Um tom levemente mais escuro que o --azul-escuro para o hover */
     background-color: #004182 !important; 
     border-color: #004182 !important;
-}
-
-
-/* --- ESTILOS DO RODAPÉ (Idêntico) --- */
-.custom-bg-dark {
-    background-color: var(--azul-escuro) !important;
-}
-
-.custom-text-footer {
-    color: rgba(255, 255, 255, 0.75) !important;
-}
-
-.custom-link-footer {
-    color: rgba(255, 255, 255, 0.75) !important;
-    text-decoration: none;
-}
-
-.custom-link-footer:hover {
-    color: #fff !important;
-}
-
-.custom-hr-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Cor de Sucesso padrão do Bootstrap para o checkmark */
-.text-success {
-    color: var(--cor-sucesso) !important;
 }

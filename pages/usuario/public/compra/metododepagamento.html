@@ -25,53 +25,7 @@
     <title>FarmaVite</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
-      <div class="container">
-        <a class="navbar-brand logo" href="#">
-          <i class="fas fa-prescription-bottle-alt me-1"></i> FarmaVite
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Alternar navegação"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#">Farmácias</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Seja Entregador</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Seja Parceiro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Meus Pedidos</a>
-            </li>
-          </ul>
-        </div>
-        <div class="d-flex align-items-center">
-          <a href="#" class="btn me-3 icone-btn"><i class="fas fa-user"></i></a>
-          <a href="#" class="btn me-3 carrinho-btn position-relative">
-            <i class="fas fa-shopping-cart"></i>
-            <span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary contagem-carrinho"
-              >1</span
-            >
-          </a>
-          <a href="#" class="btn btn-primary">Cadastrar</a>
-        </div>
-      </div>
-    </nav>
+    <div data-include="/pages/usuario/public/nav.html"></div>
     <main class="conteudo-principal container py-5">
       <h1 class="fs-3 fw-bold mb-4">Finalizar Pagamento</h1>
       <div class="row g-4">
@@ -79,7 +33,7 @@
           <div class="card resumo-pedido mb-4 p-4">
             <h2 class="fs-5 fw-bold mb-3">Resumo do Pedido</h2>
             <div
-              class="item-resumo d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom"
+              class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom"
             >
               <div class="d-flex align-items-center">
                 <span class="icone-tipo me-3 fw-bold text-white bg-secondary"
@@ -96,7 +50,7 @@
               </div>
             </div>
             <div
-              class="item-resumo d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom"
+              class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom"
             >
               <div class="d-flex align-items-center">
                 <span class="icone-tipo me-3 fw-bold text-white bg-info"
@@ -127,7 +81,7 @@
               <span class="fw-bold fs-5 text-primary">R$ 59,20</span>
             </div>
           </div>
-          <div class="forma-pagamento">
+          <div>
             <h2 class="fs-5 fw-bold mb-3">Forma de Pagamento</h2>
             <div class="cartao-metodo mb-3" data-metodo="pix">
               <label class="d-flex align-items-center p-3 border rounded">
@@ -145,7 +99,7 @@
                 </div>
               </label>
               <div
-                class="detalhes-metodo detalhes-pix p-3 border-top-0 border rounded mt-n1"
+                class="detalhes-metodo p-3 border-top-0 border rounded mt-n1"
               >
                 <p class="small text-muted mb-3">
                   Escaneie o QR Code ou copie o código PIX para realizar o
@@ -201,10 +155,11 @@
                 </div>
               </label>
               <div
-                class="detalhes-metodo detalhes-credito p-3 border-top-0 border rounded mt-n1 d-none"
+                class="detalhes-metodo p-3 border-top-0 border rounded mt-n1 d-none"
               >
                 <div class="d-flex flex-column flex-lg-row gap-3">
                   <div
+                    <div
                     class="card-preview bg-primary text-white p-3 rounded"
                     style="min-width: 260px"
                   >
@@ -212,7 +167,6 @@
                       class="d-flex justify-content-between align-items-start mb-3"
                     >
                       <div
-                        class="chip"
                         style="
                           width: 40px;
                           height: 28px;
@@ -231,7 +185,7 @@
                     </div>
                   </div>
 
-                  <div class="card-form flex-grow-1">
+                  <div class="flex-grow-1">
                     <p class="small text-muted mb-2">
                       Insira os dados do seu cartão. Opções de parcelamento
                       serão exibidas.
@@ -296,7 +250,7 @@
                 </div>
               </label>
               <div
-                class="detalhes-metodo detalhes-debito p-3 border-top-0 border rounded mt-n1 d-none"
+                class="detalhes-metodo p-3 border-top-0 border rounded mt-n1 d-none"
               >
                 <p class="small text-muted mb-0">
                   O pagamento será realizado na entrega do seu pedido.
@@ -320,7 +274,7 @@
                 </div>
               </label>
               <div
-                class="detalhes-metodo detalhes-boleto p-3 border-top-0 border rounded mt-n1 d-none"
+                class="detalhes-metodo p-3 border-top-0 border rounded mt-n1 d-none"
               >
                 <p class="small text-muted mb-0">
                   O boleto será gerado após a finalização da compra e enviado
@@ -367,98 +321,8 @@
         </div>
       </div>
     </main>
-    <footer class="text-white pt-5 pb-3 custom-bg-dark">
-            <div class="container grade-rodape pb-4">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="logo fs-4 fw-bold mb-3">
-              <i class="fas fa-prescription-bottle-alt me-1"></i> FarmaVite
-            </div>
-            <p class="small">
-              A plataforma que conecta você às melhores farmácias da sua região
-              com entrega rápida e segura.
-            </p>
-            <div class="links-sociais mt-3 fs-5">
-              <i class="fab fa-facebook-f me-3"></i>
-              <i class="fab fa-instagram me-3"></i>
-              <i class="fab fa-twitter me-3"></i>
-              <i class="fab fa-youtube"></i>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3">Links Rápidos</h5>
-            <ul class="list-unstyled small">
-              <li>
-                <a href="#" class="text-decoration-none text-light"
-                  >Farmácias</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-decoration-none text-light">Produtos</a>
-              </li>
-              <li>
-                <a href="#" class="text-decoration-none text-light"
-                  >Seja Entregador</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-decoration-none text-light"
-                  >Seja Parceiro</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3">Categorias</h5>
-            <div class="d-flex small">
-              <ul class="list-unstyled me-4">
-                <li>Medicamentos</li>
-                <li>Beleza</li>
-                <li>Bebê</li>
-                <li>Vitaminas</li>
-              </ul>
-              <ul class="list-unstyled">
-                <li>Higiene</li>
-                <li>Demarto</li>
-                <li>Saúde</li>
-                <li>Consultas</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3">Contato</h5>
-            <ul class="list-unstyled small">
-              <li><i class="fas fa-phone me-2"></i> (11) 3000-3000</li>
-              <li>
-                <i class="fas fa-envelope me-2"></i> contato@farmavite.com
-              </li>
-              <li><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="rodape-inferior bg-dark-blue py-3 small">
-        <div
-          class="container d-flex justify-content-between flex-column flex-md-row text-center"
-        >
-          <p class="mb-0">© 2024 FarmaVite. Todos os direitos reservados.</p>
-          <div class="links-politicas mt-2 mt-md-0">
-            <a href="#" class="text-white text-decoration-none me-3"
-              >Termos de Uso</a
-            >
-            <a href="#" class="text-white text-decoration-none me-3"
-              >Política de Privacidade</a
-            >
-            <a href="#" class="text-white text-decoration-none">Ajuda</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../../../js/metododepagamento.js"></script>
+    <div data-include="/pages/usuario/public/footer.html"></div>
+    <script src="/js/includes.js"></script>
+    <script src="../../../../js/metododepagamento.js"></script>
   </body>
 </html>
