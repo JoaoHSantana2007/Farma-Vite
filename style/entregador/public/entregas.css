@@ -1,0 +1,105 @@
+@import url('../geral-entregadores.css');
+@import url('../nav-entregadores.css');
+@import url('../footer-entregadores.css');
+
+.entregas-hero {
+	background: linear-gradient(180deg, #0b3a8c 0%, #072a64 100%);
+	color: #fff;
+	padding: 2.5rem 0;
+}
+
+.entregas-hero h2 {
+	color: #fff;
+}
+
+.entregas-filters .form-control,
+.entregas-filters .form-select,
+.entregas-filters .btn-select {
+	min-height: 40px;
+	border-radius: .45rem;
+}
+
+.entrega-card {
+	border-radius: .75rem;
+	border: 1px solid rgba(15,23,42,0.05);
+	background: #fff;
+}
+
+.entrega-card .card-body {
+	padding: 1.25rem;
+}
+
+.entrega-card .valor {
+	font-weight: 700;
+	color: #0b3a8c;
+}
+
+/* filtros: labels lado a lado e alinhados à esquerda */
+.filters-inline {
+	justify-content: flex-start;
+	gap: 0.75rem;
+	align-items: center;
+}
+.filter-label {
+	color: rgba(255,255,255,0.95);
+	font-weight: 600;
+	min-width: 150px;
+}
+.filter-select {
+	width: 220px;
+	min-width: 140px;
+}
+
+@media (max-width: 767.98px) {
+	.filter-label {
+		min-width: 0;
+		width: 100%;
+	}
+	.filter-select {
+		width: 100% !important;
+	}
+	.filters-inline {
+		flex-direction: column;
+		align-items: stretch;
+	}
+}
+
+.badge-urgente {
+	background: #ff6b6b;
+	color: #fff;
+	font-size: 0.65rem;
+	padding: 0.25rem .5rem;
+	border-radius: .5rem;
+}
+
+.acoes-card .btn {
+	min-width: 120px;
+}
+
+.carregar-mais {
+	display: flex;
+	justify-content: center;
+	margin: 1.75rem 0 3rem;
+}
+
+.detalhes {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.28s ease, padding 0.28s ease;
+	padding: 0 0;
+	color: #243447;
+}
+
+.detalhes.open {
+	max-height: 400px; 
+	padding: .75rem 0;
+}
+
+.detalhes .linha-item {
+	display: flex;
+	gap: .75rem;
+	align-items: center;
+	color: #596973;
+	font-size: .9rem;
+}
+

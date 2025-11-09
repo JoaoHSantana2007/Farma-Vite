@@ -14,6 +14,19 @@
     color: var(--cor-primaria) !important;
 }
 
+/* Espaçamento extra entre os itens do menu para melhor leitura */
+.navbar-nav .nav-item + .nav-item {
+        margin-left: 1rem; /* espaço horizontal entre itens */
+}
+
+/* Em telas pequenas (menu colapsado) transforme o espaçamento em margin-top para separar verticalmente */
+@media (max-width: 576px) {
+    .navbar-nav .nav-item + .nav-item {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}
+
 .carrinho-btn {
     color: var(--cor-texto-muted);
     transition: color 0.3s;

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../style/entregador/public/entregas.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../../img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>FarmaVite-Entregadores</title>
+  </head>
+  <body>
+    <div
+      data-include-entregador="/pages/entregador/nav-entregadores.html"
+    ></div>
+    <main>
+      <section class="entregas-hero">
+        <div class="container">
+          <h2 class="fw-bold">Entregas Disponíveis</h2>
+          <p class="text-white-50">
+            Aceite as entregas que estão próximas de você e comece a ganhar
+            dinheiro agora mesmo.
+          </p>
+          <div class="row entregas-filters g-2 mt-4">
+            <div class="col-12">
+              <div class="filters-inline d-flex flex-wrap align-items-center">
+                <label class="filter-label mb-0 me-2"
+                  >Filtrar por Distância</label
+                >
+                <select
+                  class="form-select filter-select me-3"
+                  aria-label="filtrar por distancia"
+                >
+                  <option value="">Qualquer distância</option>
+                  <option value="1">Até 1 km</option>
+                  <option value="3">Até 3 km</option>
+                  <option value="5">Até 5 km</option>
+                  <option value="10">Até 10 km</option>
+                </select>
+
+                <label class="filter-label mb-0 me-2">Ordenar por</label>
+                <select class="form-select filter-select" aria-label="ordenar">
+                  <option selected>Valor (menor → maior)</option>
+                  <option value="1">R$0,01 a R$10,00</option>
+                  <option value="2">R$10,00 a R$25,00</option>
+                  <option value="3">R$25,00 a R$50,00</option>
+                  <option value="4">Acima de R$50,00</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container my-5">
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="entrega-card p-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h5 class="mb-1">Farmácia São João</h5>
+                  <p class="mb-1 text-muted small">Endereço.</p>
+                  <div class="small text-muted">
+                    <i class="fas fa-location-dot me-2"></i>2.3 km
+                    <span class="mx-3">•</span>
+                    <i class="fas fa-box-open me-2"></i>3 itens
+                  </div>
+                </div>
+                <div class="col-4 entrega-valor text-end">
+                  <div class="valor">R$ 8,50</div>
+                  <div class="text-muted small">Taxa de entrega</div>
+                </div>
+              </div>
+              <div class="detalhes">
+                <div class="linha-item">
+                  <i class="fas fa-clock"></i>Estimativa: 18-25 min
+                </div>
+                <div class="linha-item mt-2">
+                  <i class="fas fa-note-sticky"></i>Observações: entrar em
+                  contato antes de entregar
+                </div>
+              </div>
+              <div class="row mt-3 align-items-center acoes-card">
+                <div class="col-7">
+                  <button class="btn btn-outline-secondary btn-detalhes">
+                    Ver Detalhes
+                  </button>
+                </div>
+                <div class="col-5 text-end">
+                  <button class="btn btn-primary">Aceitar Entrega</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="entrega-card p-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h5 class="mb-1">
+                    Drogaria Popular
+                    <span class="badge-urgente ms-2">URGENTE</span>
+                  </h5>
+                  <p class="mb-1 text-muted small">Endereço.</p>
+                  <div class="small text-muted">
+                    <i class="fas fa-location-dot me-2"></i>1.8 km
+                    <span class="mx-3">•</span>
+                    <i class="fas fa-box-open me-2"></i>5 itens
+                  </div>
+                </div>
+                <div class="col-4 entrega-valor text-end">
+                  <div class="valor">R$ 12,00</div>
+                  <div class="text-muted small">Taxa de entrega</div>
+                </div>
+              </div>
+              <div class="detalhes">
+                <div class="linha-item">
+                  <i class="fas fa-clock"></i>Estimativa: 12-18 min
+                </div>
+                <div class="linha-item mt-2">
+                  <i class="fas fa-note-sticky"></i>Observações: entrega
+                  urgente, priorizar
+                </div>
+              </div>
+              <div class="row mt-3 align-items-center acoes-card">
+                <div class="col-7">
+                  <button class="btn btn-outline-secondary btn-detalhes">
+                    Ver Detalhes
+                  </button>
+                </div>
+                <div class="col-5 text-end">
+                  <button class="btn btn-primary">Aceitar Entrega</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="entrega-card p-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h5 class="mb-1">Farmácia Central</h5>
+                  <p class="mb-1 text-muted small">Endereço.</p>
+                  <div class="small text-muted">
+                    <i class="fas fa-location-dot me-2"></i>3.1 km
+                    <span class="mx-3">•</span>
+                    <i class="fas fa-box-open me-2"></i>2 itens
+                  </div>
+                </div>
+                <div class="col-4 entrega-valor text-end">
+                  <div class="valor">R$ 6,75</div>
+                  <div class="text-muted small">Taxa de entrega</div>
+                </div>
+              </div>
+              <div class="detalhes">
+                <div class="linha-item">
+                  <i class="fas fa-clock"></i>Estimativa: 25-35 min
+                </div>
+                <div class="linha-item mt-2">
+                  <i class="fas fa-note-sticky"></i>Observações: embalagens
+                  frágeis
+                </div>
+              </div>
+              <div class="row mt-3 align-items-center acoes-card">
+                <div class="col-7">
+                  <button class="btn btn-outline-secondary btn-detalhes">
+                    Ver Detalhes
+                  </button>
+                </div>
+                <div class="col-5 text-end">
+                  <button class="btn btn-primary">Aceitar Entrega</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="entrega-card p-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h5 class="mb-1">
+                    Drogasil Express
+                    <span class="badge-urgente ms-2">URGENTE</span>
+                  </h5>
+                  <p class="mb-1 text-muted small">Endereço.</p>
+                  <div class="small text-muted">
+                    <i class="fas fa-location-dot me-2"></i>4.2 km
+                    <span class="mx-3">•</span>
+                    <i class="fas fa-box-open me-2"></i>7 itens
+                  </div>
+                </div>
+                <div class="col-4 entrega-valor text-end">
+                  <div class="valor">R$ 15,30</div>
+                  <div class="text-muted small">Taxa de entrega</div>
+                </div>
+              </div>
+              <div class="detalhes">
+                <div class="linha-item">
+                  <i class="fas fa-clock"></i>Estimativa: 30-45 min
+                </div>
+                <div class="linha-item mt-2">
+                  <i class="fas fa-note-sticky"></i>Observações: cliente
+                  solicita contato ao chegar
+                </div>
+              </div>
+              <div class="row mt-3 align-items-center acoes-card">
+                <div class="col-7">
+                  <button class="btn btn-outline-secondary btn-detalhes">
+                    Ver Detalhes
+                  </button>
+                </div>
+                <div class="col-5 text-end">
+                  <button class="btn btn-primary">Aceitar Entrega</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div
+      data-include-entregador="/pages/entregador/footer-entregadores.html"
+    ></div>
+    <script src="/js/entregas.js"></script>
+    <script src="/js/includes-entregador.js"></script>
+  </body>
+</html>
