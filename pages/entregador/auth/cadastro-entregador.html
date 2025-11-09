@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../../style/entregador/auth/cadastro-entregador.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../../../img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>FarmaVite - Cadastro Entregador</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="caixa">
+        <div class="cabecalho">
+          <h1>FarmaVite</h1>
+          <p>Sua farmácia digital!</p>
+        </div>
+        <div class="conteudo">
+          <h2>Criar conta de Entregador</h2>
+          <p class="subtitulo">Preencha os dados para se cadastrar</p>
+          <form>
+            <div class="campo-unico">
+              <label for="nome">Nome Completo</label>
+              <input
+                class="input"
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome completo"
+                required
+              />
+            </div>
+            <div class="linha">
+              <div>
+                <label for="email">E-mail</label>
+                <input
+                  class="input"
+                  type="email"
+                  id="email"
+                  placeholder="Digite seu e-mail"
+                  required
+                />
+              </div>
+              <div>
+                <label for="telefone">Telefone</label>
+                <input
+                  class="input"
+                  type="tel"
+                  id="telefone"
+                  placeholder="(00) 00000-0000"
+                  required
+                />
+              </div>
+            </div>
+            <div class="linha">
+              <div>
+                <label for="veiculo">Tipo de Veículo</label>
+                <select class="input" id="veiculo" required>
+                  <option value="">Selecione...</option>
+                  <option value="moto">Moto</option>
+                  <option value="carro">Carro</option>
+                  <option value="bicicleta">Bicicleta</option>
+                </select>
+              </div>
+              <div>
+                <label for="placa">Placa (opcional)</label>
+                <input
+                  class="input"
+                  type="text"
+                  id="placa"
+                  placeholder="ABC0A00"
+                />
+              </div>
+            </div>
+            <div class="linha">
+              <div>
+                <label for="senha">Senha</label>
+                <input
+                  class="input"
+                  type="password"
+                  id="senha"
+                  placeholder="Digite sua senha"
+                  minlength="8"
+                  required
+                />
+              </div>
+              <div>
+                <label for="confirmar">Confirmar Senha</label>
+                <input
+                  class="input"
+                  type="password"
+                  id="confirmar"
+                  placeholder="Confirme sua senha"
+                  minlength="8"
+                  required
+                />
+              </div>
+            </div>
+            <div class="requisitos-senha">
+              <span>Sua senha deve conter:</span>
+              <ul>
+                <li>Pelo menos 8 caracteres</li>
+                <li>Uma letra maiúscula</li>
+                <li>Um número</li>
+              </ul>
+            </div>
+            <div class="termos">
+              <input type="checkbox" id="termos" required />
+              <label for="termos">
+                Eu concordo com os <a href="#">Termos de Uso</a> e
+                <a href="#">Política de Privacidade</a>
+              </label>
+            </div>
+            <button type="submit" class="btn-submit">Criar Conta</button>
+          </form>
+          <p class="login-link">
+            Já tem uma conta?
+            <a href="login-entregador.html">Faça login aqui</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="/js/entregador-cadastro.js"></script>
+  </body>
+</html>

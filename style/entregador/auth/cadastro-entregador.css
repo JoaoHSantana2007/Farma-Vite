@@ -1,0 +1,193 @@
+:root {
+  --primary-start: #0040ff;
+  --primary-end: #0026b5;
+  --muted: #6c757d;
+  --bg: #f5f7fb;
+  --text: #222;
+  --input-border: #d9dee7;
+  --shadow: 0 8px 28px rgba(3, 23, 72, 0.06);
+}
+
+body {
+  font-family: "Poppins", system-ui, Arial, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--text);
+}
+
+.container {
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.caixa {
+  background: #fff;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.cabecalho {
+  background: linear-gradient(90deg, var(--primary-start), var(--primary-end));
+  color: #fff;
+  text-align: center;
+  padding: 28px 20px;
+}
+.cabecalho h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+.cabecalho p {
+  margin: 6px 0 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.conteudo {
+  padding: 32px 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.subtitulo {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+  justify-content: center;
+}
+
+.campo-unico {
+  width: 100%;
+}
+
+.linha > div,
+.campo-unico {
+  flex: 1;
+  min-width: 240px;
+}
+
+/* --- Aqui está o espaçamento aprimorado entre labels e outros elementos --- */
+label {
+  display: block;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 8px;
+  margin-top: 8px; /* <- novo espaçamento acima da label */
+  text-align: left;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  font-size: 0.98rem;
+  transition: 0.2s ease;
+  margin-bottom: 4px; /* pequeno respiro abaixo do input */
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-start);
+  box-shadow: 0 0 0 4px rgba(0, 64, 255, 0.08);
+}
+
+select.input {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #666 50%),
+    linear-gradient(135deg, #666 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-position: right 12px center, right 6px center;
+  background-size: 6px 6px;
+}
+
+.requisitos-senha {
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--muted);
+  width: 100%;
+}
+.requisitos-senha ul {
+  margin: 6px 0 0 16px;
+  padding: 0;
+  color: var(--text);
+}
+
+.termos {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: left;
+  width: 100%;
+  margin-top: 8px; /* espaçamento adicional acima */
+}
+.termos a {
+  color: var(--primary-start);
+  text-decoration: none;
+}
+.termos a:hover {
+  text-decoration: underline;
+}
+
+.btn-submit {
+  width: 100%;
+  max-width: 240px;
+  background: linear-gradient(90deg, var(--primary-start), var(--primary-end));
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.2s ease;
+  margin-top: 8px;
+}
+.btn-submit:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+}
+
+.login-link {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 18px;
+}
+.login-link a {
+  color: var(--primary-end);
+  text-decoration: none;
+  font-weight: 500;
+}
+.login-link a:hover {
+  text-decoration: underline;
+}
