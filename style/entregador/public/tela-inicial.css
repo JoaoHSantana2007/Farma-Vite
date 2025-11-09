@@ -1,3 +1,21 @@
 @import url('../geral-entregadores.css');
 @import url('../nav-entregadores.css');
 @import url('../footer-entregadores.css');
+
+.entregador-grid .entregador-card {
+	transition: transform .18s ease, box-shadow .18s ease;
+	border-radius: .9rem;
+}
+.entregador-grid .entregador-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 10px 30px rgba(20,20,20,0.08);
+}
+.entregador-card .icon-circle {
+	width: 56px;
+	height: 56px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-size: 20px;
+}
