@@ -1,0 +1,19 @@
+:root {
+    --cor-primaria: #007bff;        
+    --cor-fundo-claro: #f8f9fa;    
+    --cor-borda-clara: #dee2e6;    
+    --cor-texto-muted: #6c757d;     
+    --azul-escuro: #0056b3;       
+    --cor-texto-claro: #fff;
+    --cor-secundaria: #17a2b8;      
+    --cor-alerta: #ffc107;        
+    --cor-sucesso: #28a745;         
+    --cor-perigo: #dc3545;          
+    --cor-texto-base: #212529;   
+}
+
+body {
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-base);
+    font-family: Arial, sans-serif;
+}

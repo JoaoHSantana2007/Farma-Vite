@@ -1,0 +1,34 @@
+@import url('geral-entregadores.css');
+
+.navbar-brand.logo {
+    color: var(--cor-primaria) !important;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: var(--cor-texto-base) !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--cor-primaria) !important;
+}
+
+.carrinho-btn {
+    color: var(--cor-texto-muted);
+    transition: color 0.3s;
+}
+.carrinho-btn:hover {
+    color: var(--cor-primaria);
+}
+
+.contagem-carrinho {
+    background-color: var(--cor-primaria) !important;
+    font-size: 0.7rem;
+    padding: 0.35em 0.6em;
+}
+
+.btn-primary {
+    background-color: var(--cor-primaria) !important;
+    border-color: var(--cor-primaria) !important;
+}
