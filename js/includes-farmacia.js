@@ -1,0 +1,52 @@
+// js/includes-farmacia.js
+// Carrega fragments HTML em elementos que tenham o atributo `data-include-farmacia`.
+// Uso: <div data-include-farmacia="/pages/farmacia/public/nav-farmacia.html"></div>
+
+(async function () {
+  'use strict';
+
+  async function fetchText(path) {
+    const res = await fetch(path, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`Erro ${res.status} ao buscar: ${path}`);
+    return await res.text();
+  }
+
+  function executeScripts(container) {
+    const scripts = Array.from(container.querySelectorAll('script'));
+    for (const oldScript of scripts) {
+      const script = document.createElement('script');
+      for (const attr of oldScript.attributes) script.setAttribute(attr.name, attr.value);
+      if (oldScript.src) {
+        script.src = oldScript.src;
+        document.body.appendChild(script);
+      } else {
+        script.textContent = oldScript.textContent;
+        document.body.appendChild(script);
+      }
+      oldScript.remove();
+    }
+  }
+
+  async function loadFarmaciaIncludes() {
+    const includes = Array.from(document.querySelectorAll('[data-include-farmacia]'));
+    if (!includes.length) return;
+
+    await Promise.all(includes.map(async (el) => {
+      const path = el.getAttribute('data-include-farmacia');
+      if (!path) return;
+      try {
+        const html = await fetchText(path);
+        el.innerHTML = html;
+        executeScripts(el);
+        el.removeAttribute('data-include-farmacia');
+      } catch (err) {
+        console.error('includes-farmacia.js: erro ao carregar', path, err);
+      }
+    }));
+
+    if (document.querySelector('[data-include-farmacia]')) await loadFarmaciaIncludes();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', loadFarmaciaIncludes);
+  else loadFarmaciaIncludes();
+})();

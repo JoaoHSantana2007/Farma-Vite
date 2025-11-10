@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../../style/entregador/auth/cadastro-entregador.css" />
+    <link
+      rel="shortcut icon"
+      href="../../../../img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>FarmaVite - Cadastro Farmácia Parceira</title>
+  </head>
+  <body>
+
+
+      <main class="container form-area">
+        <div class="card cadastro-card mx-auto">
+        <div class="container">
+          <div class="caixa">
+            <div class="cabecalho">
+              <h1>FarmaVite</h1>
+              <p>Seja uma Farmácia Parceira</p>
+            </div>
+            <div class="conteudo">
+              <h2>Cadastrar Farmácia</h2>
+              <p class="subtitulo">Preencha os dados da sua farmácia</p>
+
+              <form>
+                <div class="campo-unico">
+                  <label for="nome-farmacia">Nome da Farmácia</label>
+                  <input class="input" type="text" id="nome-farmacia" placeholder="Nome da Farmácia" required />
+                </div>
+
+                <div class="linha">
+                  <div>
+                    <label for="cnpj">CNPJ</label>
+                    <input class="input" type="text" id="cnpj" placeholder="00.000.000/0000-00" required />
+                  </div>
+                  <div>
+                    <label for="responsavel">Nome do Responsável</label>
+                    <input class="input" type="text" id="responsavel" placeholder="Nome do responsável" required />
+                  </div>
+                </div>
+
+                <div class="linha">
+                  <div>
+                    <label for="email">E-mail Comercial</label>
+                    <input class="input" type="email" id="email" placeholder="contato@farmacia.com" required />
+                  </div>
+                  <div>
+                    <label for="telefone">Telefone</label>
+                    <input class="input" type="tel" id="telefone" placeholder="(00) 0000-0000" required />
+                  </div>
+                </div>
+
+                <div class="linha">
+                  <div>
+                    <label for="cep">CEP</label>
+                    <input class="input" type="text" id="cep" placeholder="00000-000" />
+                  </div>
+                  <div>
+                    <label for="rua">Rua</label>
+                    <input class="input" type="text" id="rua" placeholder="Rua / Logradouro" />
+                  </div>
+                </div>
+
+                <div class="linha">
+                  <div>
+                    <label for="numero">Número</label>
+                    <input class="input" type="text" id="numero" placeholder="Número" />
+                  </div>
+                  <div>
+                    <label for="bairro">Bairro</label>
+                    <input class="input" type="text" id="bairro" placeholder="Bairro" />
+                  </div>
+                </div>
+
+                <div class="linha">
+                  <div style="flex:1">
+                    <label for="complemento">Complemento</label>
+                    <input class="input" type="text" id="complemento" placeholder="Complemento" />
+                  </div>
+                </div>
+
+                <div class="linha">
+                  <div>
+                    <label for="senha">Senha</label>
+                    <input class="input" type="password" id="senha" placeholder="Crie uma senha" minlength="8" required />
+                  </div>
+                  <div>
+                    <label for="confirmar">Confirmar Senha</label>
+                    <input class="input" type="password" id="confirmar" placeholder="Confirme a senha" minlength="8" required />
+                  </div>
+                </div>
+
+                <div class="requisitos-senha">
+                  <span>Sua senha deve conter:</span>
+                  <ul>
+                    <li>Pelo menos 8 caracteres</li>
+                    <li>Uma letra maiúscula</li>
+                    <li>Um número</li>
+                  </ul>
+                </div>
+
+                <div class="termos">
+                  <input type="checkbox" id="termos" required />
+                  <label for="termos">Eu concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a></label>
+                </div>
+                <button type="submit" class="btn-submit">Criar Conta</button>
+              </form>
+              <p class="login-link">Já tem uma conta? <a href="login-farmacia.html">Faça login aqui</a></p>
+              
+            </div>
+          </div>
+        </div>
+      </main>
+      <script src="/js/farmacia-cadastro.js"></script>
+  </body>
+</html>

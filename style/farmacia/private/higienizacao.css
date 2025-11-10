@@ -1,0 +1,68 @@
+@import url("../../usuario/geral.css");
+@import url("../../usuario/nav.css");
+@import url("../../usuario/footer.css");
+
+.higien-hero {
+  background: linear-gradient(
+    180deg,
+    var(--cor-primaria) 0%,
+    var(--cor-secundaria) 100%
+  );
+  color: #fff;
+}
+.higien-hero h1 {
+  font-weight: 800;
+}
+
+.tab-btn.active {
+  background: var(--cor-primaria);
+  color: #fff;
+  border-color: var(--cor-primaria);
+}
+.tab-btn {
+  border-radius: 8px;
+}
+
+.kpi {
+  border-radius: 10px;
+  border: 1px solid var(--cor-borda-clara);
+  background: #fff;
+}
+.kpi .icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-purple {
+  color: #6f42c1;
+}
+.bg-purple {
+  background: #6f42c1;
+}
+
+.table-card {
+  border-radius: 12px;
+  border: 1px solid var(--cor-borda-clara);
+  background: #fff;
+}
+.table thead th {
+  border-bottom: 0;
+  font-weight: 700;
+}
+.table tbody tr {
+  border-bottom: 1px solid var(--cor-borda-clara);
+}
+.table tbody tr td {
+  vertical-align: middle;
+}
+.icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

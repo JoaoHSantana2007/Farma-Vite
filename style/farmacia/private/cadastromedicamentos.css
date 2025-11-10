@@ -1,0 +1,76 @@
+@import url("../../usuario/geral.css");
+@import url("../../usuario/footer.css");
+@import url("../../usuario/nav.css");
+
+.caixa {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 4px solid var(--cor-primaria);
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.06);
+}
+.caixa h3 {
+  color: var(--azul-escuro);
+  font-weight: 700;
+}
+.caixa p.text-muted {
+  color: var(--cor-texto-muted);
+}
+
+.card {
+  border-radius: 10px;
+  border: 1px solid var(--cor-borda-clara);
+}
+.card .card-title {
+  font-weight: 700;
+  color: var(--azul-escuro);
+}
+.card.border-primary {
+  border-color: var(--cor-primaria);
+}
+
+.card .border {
+  border-style: solid;
+}
+.card .fa-image {
+  color: var(--cor-borda-clara);
+}
+.card .border.rounded-3 {
+  background: var(--cor-fundo-claro);
+}
+.card .form-control[type="file"] {
+  border: 0;
+}
+
+.card .border.rounded-3 p {
+  margin-bottom: 0;
+}
+.card .border.rounded-3 input[type="file"] {
+  margin-top: 0.75rem;
+}
+.card .border.rounded-3 {
+  border: 1px dashed var(--cor-borda-clara);
+}
+
+.btn-primary {
+  background: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.12);
+}
+.btn-primary:hover {
+  background: var(--azul-escuro);
+  border-color: var(--azul-escuro);
+}
+.btn-outline-secondary {
+  border-color: var(--cor-borda-clara);
+  color: var(--cor-texto-muted);
+}
+
+.badge.bg-success {
+  background: var(--cor-sucesso);
+  color: #fff;
+}
+.badge.bg-danger {
+  background: var(--cor-perigo);
+  color: #fff;
+}

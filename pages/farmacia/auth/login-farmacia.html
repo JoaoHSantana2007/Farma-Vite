@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../style/auth/login.css">
+        <link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon">
+        <title>Farma Vite</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="caixa">
+                <div class="cabecalho">    
+                    <h1>FarmaVite</h1>
+                    <p>Sua farmácia digital!</p>
+                </div>
+                <h2>Bem-Vindo de Volta!</h2>
+                <p class="subtitulo">Entre com sua conta para continuar</p>
+                <form action="#" method="post">
+                    <div>
+                        <label for="email">Email: </label>
+                        <input class="radius-formulario" type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="senha">Senha: </label>
+                        <input class="radius-formulario" type="password" id="senha" name="senha" placeholder="Senha" required>
+                    </div>
+                    <div opcoes>
+                        <input type="checkbox" id="lembrar" name="lembrar" value="sim">
+                        <label for="lembrar">Lembrar de mim</label>
+                        <a href="alterarSenha/alterarsenha-farmacia.html">Esqueci minha senha</a>
+                    </div>
+                </form>
+                <a href="/pages/farmacia/public/tela-inicial-farmacia.html"><button>Entrar</button></a>
+                <p class="cadastro">Não tem conta? <a href="cadastro-farmacia.html">Cadastrar-se aqui</a></p>
+            </div>
+        </div>
+    </body>
+</html>

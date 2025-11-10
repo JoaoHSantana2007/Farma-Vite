@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+		<link rel="stylesheet" href="../../../style/farmacia/private/higienizacao.css">
+		<link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon">
+		<title>FarmaVite-Farmácia</title>
+	</head>
+	<body>
+		<div data-include-farmacia="/pages/farmacia/public/nav-farmacia.html"></div>
+		<main>
+			<section class="higien-hero bg-light py-4">
+				<div class="container">
+					<div class="d-flex align-items-center justify-content-between">
+						<div>
+							<h1 class="mb-1">Higienizacao</h1>
+						</div>
+						<div>
+							<button class="btn btn-primary btn-sm"><i class="fas fa-plus me-2"></i>Nova Higienização</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="container my-4">
+				<div class="d-flex gap-2 mb-3">
+					<button class="btn btn-sm btn-outline-primary tab-btn active" data-tab="recentes">Recentes</button>
+					<button class="btn btn-sm btn-outline-primary tab-btn" data-tab="agendadas">Agendadas</button>
+					<button class="btn btn-sm btn-outline-primary tab-btn" data-tab="concluidas">Concluídas</button>
+				</div>
+
+				<div class="row g-3 mb-4">
+					<div class="col-6 col-md-3">
+						<div class="kpi card p-3">
+							<div class="d-flex justify-content-between align-items-center">
+								<div>
+									<small class="text-muted">Concluídas Hoje</small>
+									<div class="h4 mt-1 text-success" id="kpi-concluidas">12</div>
+									<small class="text-muted">+2 desde ontem</small>
+								</div>
+								<div class="icon-circle bg-success text-white"><i class="fas fa-check"></i></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-3">
+						<div class="kpi card p-3">
+							<div class="d-flex justify-content-between align-items-center">
+								<div>
+									<small class="text-muted">Pendentes</small>
+									<div class="h4 mt-1 text-warning" id="kpi-pendentes">3</div>
+									<small class="text-muted">Aguardando execução</small>
+								</div>
+								<div class="icon-circle bg-warning text-white"><i class="fas fa-clock"></i></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-3">
+						<div class="kpi card p-3">
+							<div class="d-flex justify-content-between align-items-center">
+								<div>
+									<small class="text-muted">Agendadas</small>
+									<div class="h4 mt-1 text-primary" id="kpi-agendadas">5</div>
+									<small class="text-muted">Para esta semana</small>
+								</div>
+								<div class="icon-circle bg-info text-white"><i class="fas fa-calendar-alt"></i></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-3">
+						<div class="kpi card p-3">
+							<div class="d-flex justify-content-between align-items-center">
+								<div>
+									<small class="text-muted">Taxa de Conformidade</small>
+									<div class="h4 mt-1 text-purple" id="kpi-conformidade">98%</div>
+									<small class="text-muted">Últimos 30 dias</small>
+								</div>
+								<div class="icon-circle bg-purple text-white"><i class="fas fa-percent"></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card table-card">
+					<div class="card-body">
+						<h5 class="card-title">Atividades de Higienização</h5>
+						<p class="text-muted">Histórico e status das atividades de limpeza e desinfecção</p>
+
+						<div class="table-responsive">
+							<table class="table align-middle">
+								<thead>
+									<tr>
+										<th>Tipo</th>
+										<th>Área</th>
+										<th>Responsável</th>
+										<th>Data/Hora</th>
+										<th>Status</th>
+										<th>Ações</th>
+									</tr>
+								</thead>
+								<tbody id="higien-list">
+									<tr data-status="concluida">
+										<td><i class="fas fa-check-circle text-success me-2"></i>Limpeza Geral</td>
+										<td>Área de Manipulação</td>
+										<td>Maria Silva</td>
+										<td>2024-01-15 08:30</td>
+										<td><span class="badge bg-success">Concluído</span></td>
+										<td><a href="#">Ver Detalhes</a></td>
+									</tr>
+									<tr data-status="concluida">
+										<td><i class="fas fa-broom text-success me-2"></i>Desinfecção</td>
+										<td>Balcão de Atendimento</td>
+										<td>João Santos</td>
+										<td>2024-01-15 14:00</td>
+										<td><span class="badge bg-success">Concluído</span></td>
+										<td><a href="#">Ver Detalhes</a></td>
+									</tr>
+									<tr data-status="pendente">
+										<td><i class="fas fa-vial text-warning me-2"></i>Sanitização</td>
+										<td>Estoque de Medicamentos</td>
+										<td>Ana Costa</td>
+										<td>2024-01-15 16:45</td>
+										<td><span class="badge bg-warning">Pendente</span></td>
+										<td><a href="#">Ver Detalhes</a></td>
+									</tr>
+									<tr data-status="concluida">
+										<td><i class="fas fa-cogs text-success me-2"></i>Limpeza de Equipamentos</td>
+										<td>Geladeira de Vacinas</td>
+										<td>Carlos Lima</td>
+										<td>2024-01-14 09:15</td>
+										<td><span class="badge bg-success">Concluído</span></td>
+										<td><a href="#">Ver Detalhes</a></td>
+									</tr>
+									<tr data-status="concluida">
+										<td><i class="fas fa-bacterium text-success me-2"></i>Desinfecção</td>
+										<td>Banheiros</td>
+										<td>Maria Silva</td>
+										<td>2024-01-14 11:30</td>
+										<td><span class="badge bg-success">Concluído</span></td>
+										<td><a href="#">Ver Detalhes</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div data-include-farmacia="/pages/farmacia/public/footer-farmacia.html"></div>
+			<script src="/js/includes-farmacia.js"></script>
+			<script src="/js/higienizacao.js"></script>
+	</body>
+</html>

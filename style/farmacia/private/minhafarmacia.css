@@ -1,0 +1,107 @@
+@import url("../../usuario/geral.css");
+@import url("../../usuario/nav.css");
+@import url("../../usuario/footer.css");
+
+main {
+  padding: 2.5rem 0;
+}
+.page-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--azul-escuro);
+}
+.status-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--cor-borda-clara);
+  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.04);
+}
+.status-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.status-dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.status-dot.success {
+  background: var(--cor-sucesso);
+  color: #fff;
+}
+.status-dot.warn {
+  background: var(--cor-alerta);
+  color: #000;
+}
+.status-text {
+  font-weight: 600;
+}
+
+.farm-info {
+  margin-top: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  border: 1px solid var(--cor-borda-clara);
+}
+.farm-info .section-title {
+  font-weight: 700;
+  color: var(--azul-escuro);
+  margin-bottom: 1rem;
+}
+.field-label {
+  font-size: 0.85rem;
+  color: var(--cor-texto-muted);
+  margin-bottom: 0.3rem;
+}
+.field-value {
+  background: var(--cor-fundo-claro);
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+
+.metrics {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+}
+.metric {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid var(--cor-borda-clara);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.metric .icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.metric .value {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.metric .label {
+  font-size: 0.85rem;
+  color: var(--cor-texto-muted);
+}
+
+.btn-edit {
+  float: right;
+}

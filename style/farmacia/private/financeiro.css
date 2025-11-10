@@ -1,0 +1,82 @@
+@import url("../../usuario/geral.css");
+@import url("../../usuario/nav.css");
+@import url("../../usuario/footer.css");
+
+.finance-hero {
+    background: linear-gradient(180deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+  padding: 2.5rem 0;
+}
+.finance-hero h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.page-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+}
+
+.resumo-card {
+  border-radius: 10px;
+  border: 1px solid var(--cor-borda-clara);
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.04);
+}
+.resumo-card small {
+  color: var(--cor-texto-muted);
+}
+
+.transacoes-card {
+  border-radius: 12px;
+  border: 1px solid var(--cor-borda-clara);
+  background: #fff;
+}
+.transacoes-card .list-rows {
+  padding: 6px;
+}
+.transacao-item {
+  border-radius: 8px;
+}
+.transacao-item .icon-box {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.transacao-item .icon-box i {
+  color: var(--cor-primaria);
+}
+.transacao-item p {
+  margin: 0;
+}
+
+.saldo-card,
+.metas-card,
+.acoes-card {
+  border-radius: 12px;
+  border: 1px solid var(--cor-borda-clara);
+  background: #fff;
+}
+.saldo-card small {
+  color: var(--cor-texto-muted);
+}
+
+.icon-box.bg-light {
+  background: var(--cor-fundo-claro);
+}
+
+.filtro-group .filtro.active {
+  background: var(--cor-primaria);
+  color: #fff;
+}
+.filtro-group .filtro {
+  border-color: var(--cor-borda-clara);
+}
+
+.acoes-card .list-group-item {
+  border: none;
+  padding: 0.6rem;
+}

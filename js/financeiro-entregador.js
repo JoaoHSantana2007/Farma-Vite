@@ -1,4 +1,4 @@
-// Simple filter and action handlers for financeiro page
+// JS para a página Financeiro (versão Entregador)
 document.addEventListener('DOMContentLoaded', function () {
   // filtros
   const botoes = document.querySelectorAll('.filtro-group .filtro');
@@ -37,8 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const btnSaque = document.getElementById('solicitarSaque');
   if (btnSaque) {
     btnSaque.addEventListener('click', function () {
-      // comportamento simples: mostrar um alerta estilizado via toast (se existir)
-      // se não houver módulo de toasts, usamos alert
       if (window.EntregadorAlerts && typeof window.EntregadorAlerts.show === 'function') {
         window.EntregadorAlerts.show('Solicitação de saque enviada. Aguarde confirmação.');
       } else if (window.UserAlerts && typeof window.UserAlerts.show === 'function') {
@@ -82,7 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const header = ['Loja/Remetente', 'Detalhes', 'Valor', 'Status'];
     const lines = [header.join(',')];
     data.forEach(d => {
-      // garantir separador decimal como ponto para CSV ou manter vírgula? vamos usar vírgula como campos, valores com ponto
       const valor = d.amount.replace(',', '.');
       const row = [d.merchant, `"${d.meta}"`, valor, d.status];
       lines.push(row.join(','));
@@ -130,7 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
     </body></html>`;
     w.document.write(html);
     w.document.close();
-    // esperar carregar e chamar print
     setTimeout(() => { w.print(); }, 500);
   }
 
