@@ -1,0 +1,47 @@
+@import url('../geral-entregadores.css');
+@import url('../nav-entregadores.css');
+@import url('../footer-entregadores.css');
+
+.dados-hero {
+  background: linear-gradient(180deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+  color: #ffffff;
+  padding: 2.2rem 0;
+}
+.dados-hero h1 {
+  font-weight: 700;
+}
+.dados-card {
+  background: #fff;
+  border-radius: 0.6rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(15, 23, 42, 0.05);
+}
+.tabs-wrapper {
+  margin-top: 1rem;
+}
+.doc-item {
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.9rem;
+  background: #fff;
+}
+.doc-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.doc-detalhes {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.28s ease, padding 0.28s ease;
+  padding: 0;
+}
+.doc-detalhes.open {
+  max-height: 300px;
+  padding: 0.75rem 0;
+}
+.save-area {
+  text-align: right;
+  margin-top: 1rem;
+}

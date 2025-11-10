@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="../../../style/entregador/public/entregas.css"
     />
+    <link rel="stylesheet" href="../../../style/entregador/private/dadosveiculo-entregador.css" />
     <link
       rel="shortcut icon"
       href="../../../img/favicon.ico"
@@ -27,11 +28,154 @@
       data-include-entregador="/pages/entregador/nav-entregadores.html"
     ></div>
     <main>
+      <section class="veiculo-hero">
+        <div class="container">
+          <h1>Informações do Veículo</h1>
+          <p class="text-white-50">Gerencie os dados do seu veículo e verifique a situação dos documentos.</p>
+        </div>
+      </section>
 
+      <section class="container my-4">
+        <div class="veiculo-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <h5 class="mb-0">Informações do Veículo</h5>
+            <button class="btn btn-primary btn-edit" id="btnEditar">Editar Dados</button>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label class="form-label">Tipo de Veículo</label>
+              <input class="form-control" id="tipo" value="Motocicleta" disabled />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Placa</label>
+              <input class="form-control" id="placa" value="ABC-1234" disabled />
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Marca</label>
+              <input class="form-control" id="marca" value="Honda" disabled />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Cor</label>
+              <input class="form-control" id="cor" value="Vermelha" disabled />
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Modelo</label>
+              <input class="form-control" id="modelo" value="CG 160" disabled />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">RENAVAM</label>
+              <input class="form-control" id="renavam" value="12345678901" disabled />
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Ano</label>
+              <input class="form-control" id="ano" value="2020" disabled />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Chassi</label>
+              <input class="form-control" id="chassi" value="9BWZZZ377VT004251" disabled />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <h5>Documentos do Veículo</h5>
+          <div class="row g-3 mt-2">
+            <div class="col-12 col-md-6">
+              <div class="doc-item">
+                <div class="doc-meta">
+                  <div>
+                    <strong>CRLV Digital</strong>
+                    <div class="label-muted">Certificado de Registro e Licenciamento de Veículo</div>
+                  </div>
+                  <div>
+                    <span class="text-success">Documento válido</span>
+                  </div>
+                </div>
+                <div class="doc-detalhes mt-2">
+                  <div class="small">Arquivo: crlv_veiculo.pdf — Emitido em 10/2023</div>
+                  <div class="small mt-1">Validade: 10/2025</div>
+                </div>
+                <div class="mt-3">
+                  <button class="btn btn-outline-primary btn-doc-detalhes">Visualizar Documento</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="doc-item">
+                <div class="doc-meta">
+                  <div>
+                    <strong>Seguro DPVAT</strong>
+                    <div class="label-muted">Seguro de Danos Pessoais Causados por Veículos</div>
+                  </div>
+                  <div>
+                    <span class="text-warning">Vence em 15 dias</span>
+                  </div>
+                </div>
+                <div class="doc-detalhes mt-2">
+                  <div class="small">Apólice: dpvat_2024.pdf — Vencimento: 24/11/2025</div>
+                </div>
+                <div class="mt-3">
+                  <button class="btn btn-outline-warning btn-doc-detalhes">Renovar Seguro</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="doc-item">
+                <div class="doc-meta">
+                  <div>
+                    <strong>Inspeção Veicular</strong>
+                    <div class="label-muted">Certificado de Inspeção de Segurança Veicular</div>
+                  </div>
+                  <div>
+                    <span class="text-success">Válido até 2025</span>
+                  </div>
+                </div>
+                <div class="doc-detalhes mt-2">
+                  <div class="small">Arquivo: inspecao_veicular.pdf — Emitido em 02/2024</div>
+                </div>
+                <div class="mt-3">
+                  <button class="btn btn-outline-primary btn-doc-detalhes">Visualizar Certificado</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="doc-item">
+                <div class="doc-meta">
+                  <div>
+                    <strong>Seguro Particular</strong>
+                    <div class="label-muted">Seguro contra terceiros e danos próprios</div>
+                  </div>
+                  <div>
+                    <span class="text-success">Ativo - Seguradora XYZ</span>
+                  </div>
+                </div>
+                <div class="doc-detalhes mt-2">
+                  <div class="small">Apólice: seguro_particular.pdf — Vigência: 01/2025</div>
+                </div>
+                <div class="mt-3">
+                  <button class="btn btn-outline-primary btn-doc-detalhes">Ver Apólice</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="save-area">
+          <button class="btn btn-primary" id="btnSalvar">Salvar Alterações</button>
+        </div>
+      </section>
     </main>
     <div
       data-include-entregador="/pages/entregador/footer-entregadores.html"
     ></div>
+    <script src="/js/dadosveiculo.js"></script>
     <script src="/js/entregas.js"></script>
     <script src="/js/includes-entregador.js"></script>
   </body>

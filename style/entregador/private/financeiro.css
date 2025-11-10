@@ -1,0 +1,76 @@
+@import url("../geral-entregadores.css");
+@import url("../nav-entregadores.css");
+@import url("../footer-entregadores.css");
+
+.finance-hero {
+  background: linear-gradient(180deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+  color: #fff;
+  padding: 2rem 0;
+}
+.finance-hero h1 {
+  font-weight: 700;
+  color: #f7fbff;
+}
+.finance-cards .card {
+  border-radius: 0.6rem;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+}
+.transacoes-card {
+  border-radius: 0.6rem;
+  padding: 1rem;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  background: #fff;
+}
+.transacao-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.03);
+}
+.transacao-item:last-child {
+  border-bottom: 0;
+}
+.transacao-meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+.transacao-meta .icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7fb;
+}
+.valor-concluido {
+  color: #22c55e;
+  font-weight: 700;
+}
+.valor-pendente {
+  color: #f59e0b;
+  font-weight: 700;
+}
+.saldo-card {
+  border-radius: 0.6rem;
+  padding: 1rem;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  background: #fff;
+}
+.meta-card {
+  border-radius: 0.6rem;
+  padding: 1rem;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  background: #fff;
+  margin-top: 1rem;
+}
+.acoes-rapidas .list-group-item {
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  border-radius: 0.45rem;
+  margin-bottom: 0.5rem;
+}
+.filtro-group .btn {
+  min-width: 68px;
+}
