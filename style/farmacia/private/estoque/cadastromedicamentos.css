@@ -1,6 +1,6 @@
-@import url("../../usuario/geral.css");
-@import url("../../usuario/footer.css");
-@import url("../../usuario/nav.css");
+@import url("/style/usuario/geral.css");
+@import url("/style/usuario/footer.css");
+@import url("/style/usuario/nav.css");
 
 .caixa {
   background: #fff;
