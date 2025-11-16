@@ -1,6 +1,4 @@
-// JS para a página Financeiro (versão Entregador)
 document.addEventListener('DOMContentLoaded', function () {
-  // filtros
   const botoes = document.querySelectorAll('.filtro-group .filtro');
   const itens = document.querySelectorAll('.transacao-item');
 
@@ -29,11 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // iniciar com semana
   const inicial = document.querySelector('.filtro-group .filtro.active');
   if (inicial) filtrar(inicial.getAttribute('data-filter'));
 
-  // solicitar saque
   const btnSaque = document.getElementById('solicitarSaque');
   if (btnSaque) {
     btnSaque.addEventListener('click', function () {
@@ -47,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Export / Relatório actions
   const btnExportCSV = document.getElementById('exportarCSV');
   const btnExportJSON = document.getElementById('exportarJSON');
   const btnGerar = document.getElementById('gerarRelatorio');

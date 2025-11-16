@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // restaura seleção anterior
     (function restoreSelected() {
         const saved = localStorage.getItem(STORAGE_KEY);
         let initial = document.querySelector('input[name="metodoPagamento"]:checked');
@@ -54,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // torna os cartões clicáveis e acessíveis
     cartoes.forEach(card => {
         card.setAttribute('tabindex', '0');
         card.style.cursor = 'pointer';
@@ -68,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // copiar PIX (usamos ícone em vez de imagem; adiciona tooltip com o código)
     document.querySelectorAll('.detalhes-pix').forEach(pixBox => {
         const codeEl = pixBox.querySelector('.codigo-pix');
         const btn = pixBox.querySelector('.btn-copiar-pix');
@@ -97,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    /* ------------------ cartão: formatação, preview e validação ------------------ */
     function onlyDigits(str) { return (str || '').replace(/\D/g, ''); }
     function formatCardNumber(value) {
         const digits = onlyDigits(value).slice(0, 19);
@@ -160,7 +156,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const raw = cardNumberInput ? onlyDigits(cardNumberInput.value) : '';
         const last4 = raw.slice(-4);
         const masked = raw.length <= 4 ? raw.padStart(4, 'X') : raw.slice(0, Math.max(0, raw.length - 4)).replace(/\d/g, 'X') + last4;
-        // format masked in groups of 4
         const grouped = masked.replace(/(.{4})/g, '$1 ').trim();
         if (numEl) numEl.textContent = grouped || 'XXXX XXXX XXXX 1234';
 
@@ -188,10 +183,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     if (cardHolderInput) cardHolderInput.addEventListener('input', updateCardPreview);
 
-    // inicializa preview e QR ao carregar
     updateCardPreview();
 
-    // validação no submit: impede se cartão selecionado e campos inválidos
     if (pagamentoForm) {
         pagamentoForm.addEventListener('submit', (e) => {
             const selected = document.querySelector('input[name="metodoPagamento"]:checked');

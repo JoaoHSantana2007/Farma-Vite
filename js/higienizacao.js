@@ -1,4 +1,3 @@
-// JS para a página de Higienização: tabs e contagem de KPIs
 (function(){
   document.addEventListener('DOMContentLoaded', function(){
     const tabs = document.querySelectorAll('.tab-btn');
@@ -32,9 +31,7 @@
 
     tabs.forEach(t => t.addEventListener('click', function(){ showTab(this.getAttribute('data-tab')); }));
 
-    // inicial
     updateKPIs();
-    // mostrar recentes por padrão
     const initial = document.querySelector('.tab-btn.active');
     if (initial) showTab(initial.getAttribute('data-tab'));
   });

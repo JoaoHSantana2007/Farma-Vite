@@ -1,7 +1,3 @@
-// js/includes-farmacia.js
-// Carrega fragments HTML em elementos que tenham o atributo `data-include-farmacia`.
-// Uso: <div data-include-farmacia="/pages/farmacia/public/nav-farmacia.html"></div>
-
 (async function () {
   'use strict';
 

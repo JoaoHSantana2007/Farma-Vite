@@ -14,12 +14,10 @@
     color: var(--cor-primaria) !important;
 }
 
-/* Espaçamento extra entre os itens do menu para melhor leitura */
 .navbar-nav .nav-item + .nav-item {
-        margin-left: 1rem; /* espaço horizontal entre itens */
+    margin-left: 1rem;
 }
 
-/* Em telas pequenas (menu colapsado) transforme o espaçamento em margin-top para separar verticalmente */
 @media (max-width: 576px) {
     .navbar-nav .nav-item + .nav-item {
         margin-left: 0;

@@ -1,10 +1,6 @@
 @import url("../../../usuario/geral.css");
 @import url("../../../usuario/nav.css");
 @import url("../../../usuario/footer.css");
-
-
-/* --- ESTILOS PÁGINA 'SEU CARRINHO' (mantidos apenas os usados) --- */
-
 .custom-bg-light {
     background-color: var(--cor-fundo-claro) !important;
 }
@@ -39,21 +35,16 @@
 .custom-border-light {
     border-color: var(--cor-borda-clara) !important;
 }
-
-/* Card "Dados para entrega" */
 .delivery-details p {
     font-size: 0.95rem;
     margin-bottom: 0.5rem;
 }
 .delivery-details .label-text {
-    /* Define uma largura fixa para alinhar os campos */
     display: inline-block;
     width: 150px; 
     color: var(--cor-texto-muted);
     font-weight: 500;
 }
-
-/* Card "Itens do Carrinho" */
 .cart-item-img {
     width: 70px;
     height: 70px;
@@ -63,9 +54,8 @@
     background-color: #fff;
 }
 
-/* Seletor de Quantidade */
 .quantity-selector .form-control {
-    flex-grow: 0.5; /* Faz o input de texto ser menor */
+    flex-grow: 0.5;
     background: #fff !important;
     border-left: 0;
     border-right: 0;
@@ -85,19 +75,16 @@
     border-bottom-left-radius: 0;
 }
 
-/* Card "Resumo do Pedido" */
 .summary-item {
     font-size: 0.95rem;
 }
 
-/* Botão "Continuar Comprando" (Azul Escuro) */
 .custom-btn-dark-blue {
     background-color: var(--azul-escuro) !important;
     border-color: var(--azul-escuro) !important;
     color: #fff !important;
 }
 .custom-btn-dark-blue:hover {
-    /* Um tom levemente mais escuro que o --azul-escuro para o hover */
     background-color: #004182 !important; 
     border-color: #004182 !important;
 }

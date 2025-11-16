@@ -34,7 +34,6 @@
 	color: #0b3a8c;
 }
 
-/* filtros: labels lado a lado e alinhados à esquerda */
 .filters-inline {
 	justify-content: flex-start;
 	gap: 0.75rem;

@@ -1,7 +1,6 @@
 @import url('../../usuario/geral.css');
 @import url('../../usuario/nav.css');
 @import url('../../usuario/footer.css');
-/* Estilos específicos para a tela inicial da farmácia */
 .farm-hero{
   background: linear-gradient(135deg,#0d6efd 0%, #6610f2 100%);
   color: #fff;
@@ -19,16 +18,12 @@
   width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.35rem;
 }
 
-/* Center icons/text within the card */
 .entregador-card h5{font-size:1.05rem;margin:0}
 
-/* Status area under the button */
 #statusInfo{min-height:1.6rem}
 
-/* Responsive tweaks */
 @media (max-width:767px){
   .icon-circle{width:56px;height:56px}
 }
 
-/* Small helper for a potential status dot (when present) */
 #statusDot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:.5rem}

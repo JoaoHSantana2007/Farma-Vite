@@ -94,13 +94,12 @@ form {
   min-width: 240px;
 }
 
-/* --- Aqui está o espaçamento aprimorado entre labels e outros elementos --- */
 label {
   display: block;
   font-size: 0.95rem;
   color: #333;
   margin-bottom: 8px;
-  margin-top: 8px; /* <- novo espaçamento acima da label */
+  margin-top: 8px;
   text-align: left;
 }
 
@@ -111,7 +110,7 @@ label {
   border-radius: 8px;
   font-size: 0.98rem;
   transition: 0.2s ease;
-  margin-bottom: 4px; /* pequeno respiro abaixo do input */
+  margin-bottom: 4px;
 }
 
 .input:focus {
@@ -149,7 +148,7 @@ select.input {
   color: var(--muted);
   text-align: left;
   width: 100%;
-  margin-top: 8px; /* espaçamento adicional acima */
+  margin-top: 8px;
 }
 .termos a {
   color: var(--primary-start);

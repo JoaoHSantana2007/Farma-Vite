@@ -2,8 +2,6 @@
 @import url('../../nav.css');
 @import url('../../footer.css');
 
-/* --- NOVOS ESTILOS PÁGINA 'RESULTADOS DE BUSCA' --- */
-
 .product-card {
     border-radius: 8px;
     border: 1px solid var(--cor-borda-clara);
@@ -17,7 +15,6 @@
     border-bottom: 1px solid var(--cor-borda-clara);
 }
 
-/* Logo da Farmácia (Círculo com Iniciais) */
 .pharmacy-logo {
     display: inline-flex;
     align-items: center;
@@ -29,19 +26,16 @@
     font-size: 0.9rem;
 }
 
-/* Cores de fundo auxiliares para os logos */
 .bg-purple { background-color: #6f42c1 !important; }
 .bg-info { background-color: #0dcaf0 !important; }
 
-/* Imagem do Produto */
 .product-card .card-img-top {
     width: 100%;
-    height: 160px; /* Altura fixa para alinhar as grades */
-    object-fit: contain; /* Garante que a imagem caiba sem distorcer */
+    height: 160px;
+    object-fit: contain;
     padding: 1rem;
 }
 
-/* Badge de Desconto */
 .product-badge {
     position: absolute;
     top: 1rem;
@@ -50,17 +44,14 @@
     font-weight: 600;
 }
 
-/* Texto do Card */
 .product-card small {
     font-size: 0.85rem;
 }
 
 .product-card .card-title-text {
-    /* Evita que títulos de 3 linhas quebrem o layout */
     min-height: 48px; 
 }
 
-/* Botão de Adicionar */
 .product-card .btn {
     padding: 0.65rem;
 }

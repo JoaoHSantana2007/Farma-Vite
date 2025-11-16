@@ -1,4 +1,3 @@
-// JS para a página Financeiro / Minha Farmácia (versão Farmácia)
 (function(){
   document.addEventListener('DOMContentLoaded', function(){
     const toggleBtn = document.getElementById('toggleStatus');
@@ -7,7 +6,6 @@
     const editBtn = document.getElementById('btnEditar');
     const inputs = document.querySelectorAll('[data-editable]');
 
-    // restaurar estado
     let online = true;
     try{ const saved = localStorage.getItem('farmaciaOnline'); if (saved !== null) online = saved === 'true'; }catch(e){}
 
@@ -27,28 +25,22 @@
       });
     }
 
-    // Edit / Save
     let editing = false;
     function setEditing(on){
       editing = on;
       inputs.forEach(i => { i.readOnly = !on; i.classList.toggle('editable', on); });
       editBtn.textContent = on ? 'Salvar' : 'Editar';
       if (!on){
-        // salvar valores em localStorage (simulação)
         const data = {};
         inputs.forEach(i => data[i.name || i.id] = i.value);
         try{ localStorage.setItem('farmaciaDados', JSON.stringify(data)); }catch(e){}
       }
     }
 
-    if (editBtn){
-      editBtn.addEventListener('click', function(){ setEditing(!editing); });
-    }
+    if (editBtn){ editBtn.addEventListener('click', function(){ setEditing(!editing); }); }
 
-    // inicializar
     updateStatusUI();
 
-    // carregar dados salvos
     try{
       const saved = localStorage.getItem('farmaciaDados');
       if (saved){

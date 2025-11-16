@@ -1,16 +1,12 @@
-// JS unificado para a página Financeiro (Farmácia)
 (function(){
   document.addEventListener('DOMContentLoaded', function(){
-    // Status / Toggle
     const toggleBtn = document.getElementById('toggleStatus');
     const statusDot = document.getElementById('statusDot');
     const statusText = document.getElementById('statusText');
 
-    // Editáveis
     const editBtn = document.getElementById('btnEditar');
     const inputs = document.querySelectorAll('[data-editable]');
 
-    // Transações / filtros / export
     const botoes = document.querySelectorAll('.filtro-group .filtro');
     const itens = document.querySelectorAll('.transacao-item');
     const btnSaque = document.getElementById('solicitarSaque');
@@ -18,7 +14,6 @@
     const btnExportJSON = document.getElementById('exportarJSON');
     const btnGerar = document.getElementById('gerarRelatorio');
 
-    // Restaurar estado online
     let online = true;
     try{ const saved = localStorage.getItem('farmaciaOnline'); if (saved !== null) online = saved === 'true'; }catch(e){}
 
@@ -38,7 +33,6 @@
       });
     }
 
-    // Edit / Save
     let editing = false;
     function setEditing(on){
       editing = on;
@@ -52,13 +46,11 @@
     }
     if (editBtn){ editBtn.addEventListener('click', function(){ setEditing(!editing); }); }
 
-    // Filtros de período
     function setActive(btn){ botoes.forEach(b => b.classList.remove('active')); if (btn) btn.classList.add('active'); }
     function filtrar(period){ if (!itens) return; itens.forEach(it => { if (period === 'todos') { it.style.display = ''; return; } const p = it.getAttribute('data-period'); if (p === period) it.style.display = ''; else it.style.display = 'none'; }); }
     botoes.forEach(b => b.addEventListener('click', function(){ const period = this.getAttribute('data-filter'); setActive(this); filtrar(period); }));
     const inicial = document.querySelector('.filtro-group .filtro.active'); if (inicial) filtrar(inicial.getAttribute('data-filter'));
 
-    // Solicitar saque
     if (btnSaque){
       btnSaque.addEventListener('click', function(){
         if (window.UserAlerts && typeof window.UserAlerts.show === 'function'){
@@ -69,7 +61,6 @@
       });
     }
 
-    // Export / Relatório
     function coletarTransacoes(){
       const rows = Array.from(document.querySelectorAll('.transacao-item'));
       return rows.map(r => {
@@ -94,7 +85,6 @@
     if (btnExportJSON) btnExportJSON.addEventListener('click', exportJSON);
     if (btnGerar) btnGerar.addEventListener('click', gerarRelatorioImprimivel);
 
-    // Inicializar UI e carregar dados salvos
     updateStatusUI();
     try{ const saved = localStorage.getItem('farmaciaDados'); if (saved){ const obj = JSON.parse(saved); inputs.forEach(i=>{ if (obj[i.name || i.id] !== undefined) i.value = obj[i.name || i.id]; }); } }catch(e){}
 

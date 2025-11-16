@@ -1,7 +1,3 @@
-// js/includes-entregador.js
-// Carrega fragments HTML em elementos que tenham o atributo `data-include-entregador`.
-// Uso: <div data-include-entregador="/pages/entregador/nav-entregadores.html"></div>
-
 (async function () {
   'use strict';
 
